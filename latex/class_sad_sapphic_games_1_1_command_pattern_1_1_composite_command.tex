@@ -1,0 +1,87 @@
+\hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command}{}\doxysection{Sad\+Sapphic\+Games.\+Command\+Pattern.\+Composite\+Command Class Reference}
+\label{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command}\index{SadSapphicGames.CommandPattern.CompositeCommand@{SadSapphicGames.CommandPattern.CompositeCommand}}
+
+
+A \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} that is composed of multiple child commands, all of which are executed together and leave one record in the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}}\textquotesingle{}s history. $<$remark$>$ For more information on this type of object seek external documentation on the composite design pattern $<$/remark$>$  
+
+
+Inheritance diagram for Sad\+Sapphic\+Games.\+Command\+Pattern.\+Composite\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.307692cm]{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command_a91ca38a5f8f50c2ab05ba68e5c94c9c5}{Execute}} ()
+\begin{DoxyCompactList}\small\item\em Queues all of the child commands into the internal \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}} and attempts to invoke all of them. Will throw an exception if one of its children fails after attempting to revert all its executed commands. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command_aac98d4c36e92a86e6471bb1e8a64e0be}{Add\+Child}} (\mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} child\+Command)
+\begin{DoxyCompactList}\small\item\em Adds a \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} to this objects children \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command_ad2982b4a4c0f1030dd0ac9ff9434851b}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command_ad2982b4a4c0f1030dd0ac9ff9434851b}} 
+List$<$ \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} $>$ {\bfseries sub\+Commands} = new List$<$\mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}}$>$()
+\begin{DoxyCompactList}\small\item\em The child Commands that will be executed upon executing this object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command_a5fa74a05f724854b58581dc660971c57}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command_a5fa74a05f724854b58581dc660971c57}} 
+\mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}} {\bfseries internal\+Stream} = new \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}}()
+\begin{DoxyCompactList}\small\item\em An internal \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}} to provide more control of the execution of the sub\+Commands of the Composite \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command_a81ea69e2e48945fac91803fc4f6eb9f2}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command_a81ea69e2e48945fac91803fc4f6eb9f2}} 
+int {\bfseries Child\+Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Number of child Commands included in this object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} that is composed of multiple child commands, all of which are executed together and leave one record in the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}}\textquotesingle{}s history. $<$remark$>$ For more information on this type of object seek external documentation on the composite design pattern $<$/remark$>$ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command_aac98d4c36e92a86e6471bb1e8a64e0be}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command_aac98d4c36e92a86e6471bb1e8a64e0be}} 
+\index{SadSapphicGames.CommandPattern.CompositeCommand@{SadSapphicGames.CommandPattern.CompositeCommand}!AddChild@{AddChild}}
+\index{AddChild@{AddChild}!SadSapphicGames.CommandPattern.CompositeCommand@{SadSapphicGames.CommandPattern.CompositeCommand}}
+\doxysubsubsection{\texorpdfstring{AddChild()}{AddChild()}}
+{\footnotesize\ttfamily virtual void Sad\+Sapphic\+Games.\+Command\+Pattern.\+Composite\+Command.\+Add\+Child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}}}]{child\+Command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Adds a \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} to this objects children 
+
+
+\begin{DoxyParams}{Parameters}
+{\em child\+Command} & The \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} to be added to the objects children \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command_a91ca38a5f8f50c2ab05ba68e5c94c9c5}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command_a91ca38a5f8f50c2ab05ba68e5c94c9c5}} 
+\index{SadSapphicGames.CommandPattern.CompositeCommand@{SadSapphicGames.CommandPattern.CompositeCommand}!Execute@{Execute}}
+\index{Execute@{Execute}!SadSapphicGames.CommandPattern.CompositeCommand@{SadSapphicGames.CommandPattern.CompositeCommand}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily override void Sad\+Sapphic\+Games.\+Command\+Pattern.\+Composite\+Command.\+Execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Queues all of the child commands into the internal \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}} and attempts to invoke all of them. Will throw an exception if one of its children fails after attempting to revert all its executed commands. 
+
+Be aware that if you override this method you will bypass the implemented failsafe\textquotesingle{}s for children of the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command}{Composite\+Command}} failing such as attempting to undo executed commands 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_irreversible_composite_failure_exception}{Irreversible\+Composite\+Failure\+Exception}}} & Indicates one of the children of the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command}{Composite\+Command}} failed and it executed one or more commands that cannot be undone. Try\+Execute\+Next will catch this exception and throw it upwards \\
+\hline
+{\em \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_reversible_composite_failure_exception}{Reversible\+Composite\+Failure\+Exception}}} & Indicates one of the children of the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command}{Composite\+Command}} failed but it was able to undo all of its executed commands. Try\+Execute\+Next will catch this exception and handle it by returning false. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_ae6189e8f9e3fc973c2dd66df8f3ec39c}{Sad\+Sapphic\+Games.\+Command\+Pattern.\+Command}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Layla/\+Documents/\+My Docs/\+Game\+Dev/\+Command\+Pattern\+Development/\+Assets/\+Packages/\+Command\+Pattern/\+Runtime/\+Commands/Composite\+Command.\+cs\end{DoxyCompactItemize}

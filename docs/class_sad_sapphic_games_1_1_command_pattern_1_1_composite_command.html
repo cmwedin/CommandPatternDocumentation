@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.2.4</span>
+   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.3.0</span>
    </div>
    <div id="projectbrief">This package contains a collection of classes and interfaces to allow for quick and consistent implementation of the command pattern across projects.</div>
   </td>
@@ -94,7 +94,7 @@ Inheritance diagram for SadSapphicGames.CommandPattern.CompositeCommand:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a91ca38a5f8f50c2ab05ba68e5c94c9c5"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html#a91ca38a5f8f50c2ab05ba68e5c94c9c5">Execute</a> ()</td></tr>
-<tr class="memdesc:a91ca38a5f8f50c2ab05ba68e5c94c9c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes each of the commands included in this object. &lt;remark&gt; Default implementation queues all subCommands into the internalStream and executes them until it is empty.&lt;/remark&gt;  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html#a91ca38a5f8f50c2ab05ba68e5c94c9c5">More...</a><br /></td></tr>
+<tr class="memdesc:a91ca38a5f8f50c2ab05ba68e5c94c9c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queues all of the child commands into the internal <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> and attempts to invoke all of them. Will throw an exception if one of its children fails after attempting to revert all its executed commands.  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html#a91ca38a5f8f50c2ab05ba68e5c94c9c5">More...</a><br /></td></tr>
 <tr class="separator:a91ca38a5f8f50c2ab05ba68e5c94c9c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6189e8f9e3fc973c2dd66df8f3ec39c"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html#ae6189e8f9e3fc973c2dd66df8f3ec39c">Execute</a> ()</td></tr>
 <tr class="memdesc:ae6189e8f9e3fc973c2dd66df8f3ec39c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the command  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html#ae6189e8f9e3fc973c2dd66df8f3ec39c">More...</a><br /></td></tr>
@@ -110,7 +110,7 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ad2982b4a4c0f1030dd0ac9ff9434851b"><td class="memItemLeft" align="right" valign="top"><a id="ad2982b4a4c0f1030dd0ac9ff9434851b" name="ad2982b4a4c0f1030dd0ac9ff9434851b"></a>
 List&lt; <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html">Command</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>subCommands</b> = new List&lt;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html">Command</a>&gt;()</td></tr>
-<tr class="memdesc:ad2982b4a4c0f1030dd0ac9ff9434851b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Commands that will be executed upon executing this object <br /></td></tr>
+<tr class="memdesc:ad2982b4a4c0f1030dd0ac9ff9434851b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The child Commands that will be executed upon executing this object <br /></td></tr>
 <tr class="separator:ad2982b4a4c0f1030dd0ac9ff9434851b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fa74a05f724854b58581dc660971c57"><td class="memItemLeft" align="right" valign="top"><a id="a5fa74a05f724854b58581dc660971c57" name="a5fa74a05f724854b58581dc660971c57"></a>
 <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html">CommandStream</a>&#160;</td><td class="memItemRight" valign="bottom"><b>internalStream</b> = new <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html">CommandStream</a>()</td></tr>
@@ -184,10 +184,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ChildCount</b><code> [
 </table>
 </div><div class="memdoc">
 
-<p>Executes each of the commands included in this object. &lt;remark&gt; Default implementation queues all subCommands into the internalStream and executes them until it is empty.&lt;/remark&gt; </p>
+<p>Queues all of the child commands into the internal <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> and attempts to invoke all of them. Will throw an exception if one of its children fails after attempting to revert all its executed commands. </p>
+<p >Be aware that if you override this method you will bypass the implemented failsafe's for children of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html" title="A Command that is composed of multiple child commands, all of which are executed together and leave o...">CompositeCommand</a> failing such as attempting to undo executed commands </p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_failure_exception.html" title="An exception that is thrown when a CompositeCommand is executed but one of its children fails">CompositeFailureException</a></td><td>Indicates one of the commands children failed, If this is possible you should be implementing <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_failable.html" title="Interface implemented by commands that could fail to execute. Commands that would fail do not have th...">IFailable</a> to prevent this from happening. </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_irreversible_composite_failure_exception.html" title="An exception that indicates a CompositeCommand is executed but one of its children failed and the com...">IrreversibleCompositeFailureException</a></td><td>Indicates one of the children of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html" title="A Command that is composed of multiple child commands, all of which are executed together and leave o...">CompositeCommand</a> failed and it executed one or more commands that cannot be undone. TryExecuteNext will catch this exception and throw it upwards </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_reversible_composite_failure_exception.html" title="An exception that indicates a CompositeCommand is executed but one of its children failed,...">ReversibleCompositeFailureException</a></td><td>Indicates one of the children of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html" title="A Command that is composed of multiple child commands, all of which are executed together and leave o...">CompositeCommand</a> failed but it was able to undo all of its executed commands. TryExecuteNext will catch this exception and handle it by returning false. </td></tr>
   </table>
   </dd>
 </dl>
@@ -197,7 +199,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ChildCount</b><code> [
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Commands/CompositeCommand.cs</li>
+<li>C:/Users/Layla/Documents/My Docs/GameDev/CommandPatternDevelopment/Assets/Packages/CommandPattern/Runtime/Commands/CompositeCommand.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

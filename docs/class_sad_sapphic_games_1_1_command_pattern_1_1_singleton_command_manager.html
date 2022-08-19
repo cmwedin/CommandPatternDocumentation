@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.2.4</span>
+   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.3.0</span>
    </div>
    <div id="projectbrief">This package contains a collection of classes and interfaces to allow for quick and consistent implementation of the command pattern across projects.</div>
   </td>
@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">SadSapphicGames.CommandPattern.SingletonCommandManager Class Reference</div></div>
@@ -96,15 +97,28 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ToggleCommandExecutio
 <tr class="memitem:ac08f559027453d9a7d457d2c15e3852f"><td class="memItemLeft" align="right" valign="top">ReadOnlyCollection&lt; <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html">Command</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#ac08f559027453d9a7d457d2c15e3852f">GetCommandHistory</a> ()</td></tr>
 <tr class="memdesc:ac08f559027453d9a7d457d2c15e3852f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#ac08f559027453d9a7d457d2c15e3852f">More...</a><br /></td></tr>
 <tr class="separator:ac08f559027453d9a7d457d2c15e3852f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba109e73390f4a02332825980ff80e3"><td class="memItemLeft" align="right" valign="top">ReadOnlyCollection&lt; <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html">Command</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#a3ba109e73390f4a02332825980ff80e3">DropCommandHistory</a> ()</td></tr>
+<tr class="memdesc:a3ba109e73390f4a02332825980ff80e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empties the history of the internal <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> and replaces it with an empty one.  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#a3ba109e73390f4a02332825980ff80e3">More...</a><br /></td></tr>
+<tr class="separator:a3ba109e73390f4a02332825980ff80e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56c29b6152541525b1f505eac66dbf43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#a56c29b6152541525b1f505eac66dbf43">QueueCommand</a> (<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html">Command</a> command)</td></tr>
 <tr class="memdesc:a56c29b6152541525b1f505eac66dbf43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue's a <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> into the CommandManager's <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#a56c29b6152541525b1f505eac66dbf43">More...</a><br /></td></tr>
 <tr class="separator:a56c29b6152541525b1f505eac66dbf43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afee54fc26d75ae6cc9c0bb4001082da5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#afee54fc26d75ae6cc9c0bb4001082da5">QueueCommands</a> (IEnumerable&lt; <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html">Command</a> &gt; commands)</td></tr>
 <tr class="memdesc:afee54fc26d75ae6cc9c0bb4001082da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue's multiple commands into the CommandManager's <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#afee54fc26d75ae6cc9c0bb4001082da5">More...</a><br /></td></tr>
 <tr class="separator:afee54fc26d75ae6cc9c0bb4001082da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2de425a9b239fbb4dfe7c56eb26cb09e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#a2de425a9b239fbb4dfe7c56eb26cb09e">QueueUndoCommand</a> (<a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html">IUndoable</a> commandToUndo)</td></tr>
-<tr class="memdesc:a2de425a9b239fbb4dfe7c56eb26cb09e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue the undo-command of a <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> implementing <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> into the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#a2de425a9b239fbb4dfe7c56eb26cb09e">More...</a><br /></td></tr>
-<tr class="separator:a2de425a9b239fbb4dfe7c56eb26cb09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace9998062a99f6e7df251eb84b267799"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#ace9998062a99f6e7df251eb84b267799">TryQueueUndoCommand</a> (<a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html">IUndoable</a> commandToUndo)</td></tr>
+<tr class="memdesc:ace9998062a99f6e7df251eb84b267799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue the undo-command of a <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> implementing <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> into the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#ace9998062a99f6e7df251eb84b267799">More...</a><br /></td></tr>
+<tr class="separator:ace9998062a99f6e7df251eb84b267799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a051b66fdc2ed7cb3870d6a00c2fb443f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#a051b66fdc2ed7cb3870d6a00c2fb443f">ForceQueueUndoCommand</a> (<a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html">IUndoable</a> commandToUndo)</td></tr>
+<tr class="memdesc:a051b66fdc2ed7cb3870d6a00c2fb443f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces the internal <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> to queue and <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> commands undo command  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#a051b66fdc2ed7cb3870d6a00c2fb443f">More...</a><br /></td></tr>
+<tr class="separator:a051b66fdc2ed7cb3870d6a00c2fb443f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a194aebc5c02ecc3202fb2bee47d33894"><td class="memItemLeft" align="right" valign="top"><a id="a194aebc5c02ecc3202fb2bee47d33894" name="a194aebc5c02ecc3202fb2bee47d33894"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>maximumHistoryDepth</b> = -1</td></tr>
+<tr class="memdesc:a194aebc5c02ecc3202fb2bee47d33894"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value that will be used in the internal <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s constructor, set to negative to record all history <br /></td></tr>
+<tr class="separator:a194aebc5c02ecc3202fb2bee47d33894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -114,12 +128,70 @@ static <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_singl
 <tr class="separator:a7b601b772876033e67f1a96c1999780b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a8051fe443115839684a0693e02dc05"><td class="memItemLeft" align="right" valign="top"><a id="a5a8051fe443115839684a0693e02dc05" name="a5a8051fe443115839684a0693e02dc05"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>HistoryCount</b><code> [get]</code></td></tr>
-<tr class="memdesc:a5a8051fe443115839684a0693e02dc05"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of Commands executed by the CommandManager <br /></td></tr>
+<tr class="memdesc:a5a8051fe443115839684a0693e02dc05"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of Commands recorded by the CommandManager's <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> <br /></td></tr>
 <tr class="separator:a5a8051fe443115839684a0693e02dc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2ff5087a58f360cd436729f7ebcfbc1"><td class="memItemLeft" align="right" valign="top"><a id="af2ff5087a58f360cd436729f7ebcfbc1" name="af2ff5087a58f360cd436729f7ebcfbc1"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>HistoryDepth</b><code> [get]</code></td></tr>
+<tr class="memdesc:af2ff5087a58f360cd436729f7ebcfbc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The depth to which the CommandManager's <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> records its history <br /></td></tr>
+<tr class="separator:af2ff5087a58f360cd436729f7ebcfbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77027eafd13e5dfda2d44fc01f92beee"><td class="memItemLeft" align="right" valign="top"><a id="a77027eafd13e5dfda2d44fc01f92beee" name="a77027eafd13e5dfda2d44fc01f92beee"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>QueueCount</b><code> [get]</code></td></tr>
+<tr class="memdesc:a77027eafd13e5dfda2d44fc01f92beee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Number of commands queued in the CommandManager's <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> <br /></td></tr>
+<tr class="separator:a77027eafd13e5dfda2d44fc01f92beee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c668e8a10bb8d9907346f23dedb5c2c"><td class="memItemLeft" align="right" valign="top"><a id="a2c668e8a10bb8d9907346f23dedb5c2c" name="a2c668e8a10bb8d9907346f23dedb5c2c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueueEmpty</b><code> [get]</code></td></tr>
+<tr class="memdesc:a2c668e8a10bb8d9907346f23dedb5c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wether or not the CommandManger's <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> has an empty queue <br /></td></tr>
+<tr class="separator:a2c668e8a10bb8d9907346f23dedb5c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A singleton manager for a single-stream, out of the box implementation of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> pattern. For more complicated implementations create your own <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> wrappers. Does not drop Commands from its CommandHistory. Executes the next command in the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> every frame. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3ba109e73390f4a02332825980ff80e3" name="a3ba109e73390f4a02332825980ff80e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ba109e73390f4a02332825980ff80e3">&#9670;&nbsp;</a></span>DropCommandHistory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ReadOnlyCollection&lt; <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html">Command</a> &gt; SadSapphicGames.CommandPattern.SingletonCommandManager.DropCommandHistory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Empties the history of the internal <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> and replaces it with an empty one. </p>
+<dl class="section return"><dt>Returns</dt><dd>The old history of the internal <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> </dd></dl>
+
+</div>
+</div>
+<a id="a051b66fdc2ed7cb3870d6a00c2fb443f" name="a051b66fdc2ed7cb3870d6a00c2fb443f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a051b66fdc2ed7cb3870d6a00c2fb443f">&#9670;&nbsp;</a></span>ForceQueueUndoCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SadSapphicGames.CommandPattern.SingletonCommandManager.ForceQueueUndoCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html">IUndoable</a>&#160;</td>
+          <td class="paramname"><em>commandToUndo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Forces the internal <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> to queue and <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> commands undo command </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">commandToUndo</td><td>The <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> commadn to undo </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac08f559027453d9a7d457d2c15e3852f" name="ac08f559027453d9a7d457d2c15e3852f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac08f559027453d9a7d457d2c15e3852f">&#9670;&nbsp;</a></span>GetCommandHistory()</h2>
 
@@ -192,32 +264,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>HistoryCount</b><code>
 
 </div>
 </div>
-<a id="a2de425a9b239fbb4dfe7c56eb26cb09e" name="a2de425a9b239fbb4dfe7c56eb26cb09e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2de425a9b239fbb4dfe7c56eb26cb09e">&#9670;&nbsp;</a></span>QueueUndoCommand()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SadSapphicGames.CommandPattern.SingletonCommandManager.QueueUndoCommand </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html">IUndoable</a>&#160;</td>
-          <td class="paramname"><em>commandToUndo</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Queue the undo-command of a <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> implementing <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> into the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">commandToUndo</td><td>The <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> to queue an undo-command for </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ad5246b881b5cda083c0894b9272019d9" name="ad5246b881b5cda083c0894b9272019d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5246b881b5cda083c0894b9272019d9">&#9670;&nbsp;</a></span>ToggleCommandExecution()</h2>
 
@@ -244,8 +290,35 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>HistoryCount</b><code>
 
 </div>
 </div>
+<a id="ace9998062a99f6e7df251eb84b267799" name="ace9998062a99f6e7df251eb84b267799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace9998062a99f6e7df251eb84b267799">&#9670;&nbsp;</a></span>TryQueueUndoCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SadSapphicGames.CommandPattern.SingletonCommandManager.TryQueueUndoCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html">IUndoable</a>&#160;</td>
+          <td class="paramname"><em>commandToUndo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Queue the undo-command of a <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> implementing <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> into the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">commandToUndo</td><td>The <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> to queue an undo-command for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Wether the undo command was allowed to be queued </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Monobehaviours/SingletonCommandManager.cs</li>
+<li>C:/Users/Layla/Documents/My Docs/GameDev/CommandPatternDevelopment/Assets/Packages/CommandPattern/Runtime/Monobehaviours/SingletonCommandManager.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

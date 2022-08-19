@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.2.4</span>
+   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.3.0</span>
    </div>
    <div id="projectbrief">This package contains a collection of classes and interfaces to allow for quick and consistent implementation of the command pattern across projects.</div>
   </td>
@@ -98,7 +98,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a60218acaae9a58d2720ee44078df86c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html">SadSapphicGames.CommandPattern.CompositeCommand</a></td></tr>
 <tr class="memitem:a91ca38a5f8f50c2ab05ba68e5c94c9c5 inherit pub_methods_class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html#a91ca38a5f8f50c2ab05ba68e5c94c9c5">Execute</a> ()</td></tr>
-<tr class="memdesc:a91ca38a5f8f50c2ab05ba68e5c94c9c5 inherit pub_methods_class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes each of the commands included in this object. &lt;remark&gt; Default implementation queues all subCommands into the internalStream and executes them until it is empty.&lt;/remark&gt;  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html#a91ca38a5f8f50c2ab05ba68e5c94c9c5">More...</a><br /></td></tr>
+<tr class="memdesc:a91ca38a5f8f50c2ab05ba68e5c94c9c5 inherit pub_methods_class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queues all of the child commands into the internal <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> and attempts to invoke all of them. Will throw an exception if one of its children fails after attempting to revert all its executed commands.  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html#a91ca38a5f8f50c2ab05ba68e5c94c9c5">More...</a><br /></td></tr>
 <tr class="separator:a91ca38a5f8f50c2ab05ba68e5c94c9c5 inherit pub_methods_class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6189e8f9e3fc973c2dd66df8f3ec39c"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html#ae6189e8f9e3fc973c2dd66df8f3ec39c">Execute</a> ()</td></tr>
 <tr class="memdesc:ae6189e8f9e3fc973c2dd66df8f3ec39c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the command  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html#ae6189e8f9e3fc973c2dd66df8f3ec39c">More...</a><br /></td></tr>
@@ -116,7 +116,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html">SadSapphicGames.CommandPattern.CompositeCommand</a></td></tr>
 <tr class="memitem:ad2982b4a4c0f1030dd0ac9ff9434851b inherit pro_attribs_class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command"><td class="memItemLeft" align="right" valign="top"><a id="ad2982b4a4c0f1030dd0ac9ff9434851b" name="ad2982b4a4c0f1030dd0ac9ff9434851b"></a>
 List&lt; <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html">Command</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>subCommands</b> = new List&lt;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html">Command</a>&gt;()</td></tr>
-<tr class="memdesc:ad2982b4a4c0f1030dd0ac9ff9434851b inherit pro_attribs_class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Commands that will be executed upon executing this object <br /></td></tr>
+<tr class="memdesc:ad2982b4a4c0f1030dd0ac9ff9434851b inherit pro_attribs_class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">The child Commands that will be executed upon executing this object <br /></td></tr>
 <tr class="separator:ad2982b4a4c0f1030dd0ac9ff9434851b inherit pro_attribs_class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fa74a05f724854b58581dc660971c57 inherit pro_attribs_class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command"><td class="memItemLeft" align="right" valign="top"><a id="a5fa74a05f724854b58581dc660971c57" name="a5fa74a05f724854b58581dc660971c57"></a>
 <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html">CommandStream</a>&#160;</td><td class="memItemRight" valign="bottom"><b>internalStream</b> = new <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html">CommandStream</a>()</td></tr>
@@ -181,7 +181,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ChildCount</b><code> [
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Commands/NullCompositeCommand.cs</li>
+<li>C:/Users/Layla/Documents/My Docs/GameDev/CommandPatternDevelopment/Assets/Packages/CommandPattern/Runtime/Commands/NullCompositeCommand.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
