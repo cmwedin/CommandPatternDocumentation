@@ -1,0 +1,74 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Namespace Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Package List}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Namespace Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Sad\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sapphic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Games Namespace Reference}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Sad\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sapphic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Games.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pattern Namespace Reference}{7}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Class Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Sad\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sapphic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Games.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pattern.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command Class Reference}{9}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{9}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Member Function Documentation}{9}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}Execute()}{9}{subsubsection.5.1.2.1}%
+\contentsline {section}{\numberline {5.2}Sad\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sapphic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Games.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pattern.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stream Class Reference}{10}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{11}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Constructor \& Destructor Documentation}{11}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}CommandStream()}{11}{subsubsection.5.2.2.1}%
+\contentsline {subsection}{\numberline {5.2.3}Member Function Documentation}{11}{subsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.3.1}DropHistory()}{11}{subsubsection.5.2.3.1}%
+\contentsline {subsubsection}{\numberline {5.2.3.2}DropQueue()}{12}{subsubsection.5.2.3.2}%
+\contentsline {subsubsection}{\numberline {5.2.3.3}ExecuteFullQueue()}{12}{subsubsection.5.2.3.3}%
+\contentsline {subsubsection}{\numberline {5.2.3.4}ForceQueueUndoCommand()}{12}{subsubsection.5.2.3.4}%
+\contentsline {subsubsection}{\numberline {5.2.3.5}GetCommandHistory()}{12}{subsubsection.5.2.3.5}%
+\contentsline {subsubsection}{\numberline {5.2.3.6}GetCommandQueue()}{13}{subsubsection.5.2.3.6}%
+\contentsline {subsubsection}{\numberline {5.2.3.7}QueueCommand()}{13}{subsubsection.5.2.3.7}%
+\contentsline {subsubsection}{\numberline {5.2.3.8}QueueCommands()}{13}{subsubsection.5.2.3.8}%
+\contentsline {subsubsection}{\numberline {5.2.3.9}TryExecuteNext()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{14}{subsubsection.5.2.3.9}%
+\contentsline {subsubsection}{\numberline {5.2.3.10}TryExecuteNext()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{14}{subsubsection.5.2.3.10}%
+\contentsline {subsubsection}{\numberline {5.2.3.11}TryQueueUndoCommand()}{14}{subsubsection.5.2.3.11}%
+\contentsline {section}{\numberline {5.3}Sad\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sapphic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Games.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pattern.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Composite\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command Class Reference}{15}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{15}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Member Function Documentation}{15}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}AddChild()}{15}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {5.3.2.2}Execute()}{16}{subsubsection.5.3.2.2}%
+\contentsline {section}{\numberline {5.4}Sad\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sapphic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Games.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pattern.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IFailable Interface Reference}{16}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{16}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Member Function Documentation}{17}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}WouldFail()}{17}{subsubsection.5.4.2.1}%
+\contentsline {section}{\numberline {5.5}Sad\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sapphic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Games.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pattern.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Irreversible\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Composite\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Failure\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{17}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{18}{subsection.5.5.1}%
+\contentsline {section}{\numberline {5.6}Sad\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sapphic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Games.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pattern.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IUndoable Interface Reference}{18}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{18}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Member Function Documentation}{18}{subsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.1}GetUndoCommand()}{18}{subsubsection.5.6.2.1}%
+\contentsline {section}{\numberline {5.7}Sad\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sapphic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Games.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pattern.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Null\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command Class Reference}{19}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{19}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Member Function Documentation}{19}{subsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.1}Execute()}{19}{subsubsection.5.7.2.1}%
+\contentsline {subsubsection}{\numberline {5.7.2.2}GetUndoCommand()}{19}{subsubsection.5.7.2.2}%
+\contentsline {section}{\numberline {5.8}Sad\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sapphic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Games.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pattern.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Null\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Composite\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command Class Reference}{20}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Detailed Description}{20}{subsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.8.2}Constructor \& Destructor Documentation}{20}{subsection.5.8.2}%
+\contentsline {subsubsection}{\numberline {5.8.2.1}NullCompositeCommand()}{20}{subsubsection.5.8.2.1}%
+\contentsline {subsection}{\numberline {5.8.3}Member Function Documentation}{20}{subsection.5.8.3}%
+\contentsline {subsubsection}{\numberline {5.8.3.1}GetUndoCommand()}{21}{subsubsection.5.8.3.1}%
+\contentsline {section}{\numberline {5.9}Sad\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sapphic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Games.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pattern.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reversible\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Composite\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Failure\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{21}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{21}{subsection.5.9.1}%
+\contentsline {section}{\numberline {5.10}Sad\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sapphic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Games.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pattern.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Simple\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Composite Class Reference}{22}{section.5.10}%
+\contentsline {subsection}{\numberline {5.10.1}Detailed Description}{22}{subsection.5.10.1}%
+\contentsline {subsection}{\numberline {5.10.2}Constructor \& Destructor Documentation}{22}{subsection.5.10.2}%
+\contentsline {subsubsection}{\numberline {5.10.2.1}SimpleComposite()}{22}{subsubsection.5.10.2.1}%
+\contentsline {section}{\numberline {5.11}Sad\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sapphic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Games.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pattern.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Singleton\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager Class Reference}{23}{section.5.11}%
+\contentsline {subsection}{\numberline {5.11.1}Detailed Description}{24}{subsection.5.11.1}%
+\contentsline {subsection}{\numberline {5.11.2}Member Function Documentation}{24}{subsection.5.11.2}%
+\contentsline {subsubsection}{\numberline {5.11.2.1}DropCommandHistory()}{24}{subsubsection.5.11.2.1}%
+\contentsline {subsubsection}{\numberline {5.11.2.2}ForceQueueUndoCommand()}{24}{subsubsection.5.11.2.2}%
+\contentsline {subsubsection}{\numberline {5.11.2.3}GetCommandHistory()}{25}{subsubsection.5.11.2.3}%
+\contentsline {subsubsection}{\numberline {5.11.2.4}QueueCommand()}{25}{subsubsection.5.11.2.4}%
+\contentsline {subsubsection}{\numberline {5.11.2.5}QueueCommands()}{25}{subsubsection.5.11.2.5}%
+\contentsline {subsubsection}{\numberline {5.11.2.6}ToggleCommandExecution()}{25}{subsubsection.5.11.2.6}%
+\contentsline {subsubsection}{\numberline {5.11.2.7}TryQueueUndoCommand()}{26}{subsubsection.5.11.2.7}%
+\contentsline {chapter}{Index}{27}{section*.32}%
