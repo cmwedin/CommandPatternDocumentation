@@ -1,0 +1,90 @@
+\hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{}\doxysection{Sad\+Sapphic\+Games.\+Command\+Pattern.\+Async\+Command Class Reference}
+\label{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}\index{SadSapphicGames.CommandPattern.AsyncCommand@{SadSapphicGames.CommandPattern.AsyncCommand}}
+
+
+The base class of all commands who\textquotesingle{}s execute method involves asynchronous tasks  
+
+
+Inheritance diagram for Sad\+Sapphic\+Games.\+Command\+Pattern.\+Async\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.600619cm]{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+sealed override void \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_ae8c309ace68936bb585e9626f90fd5c0}{Execute}} ()
+\begin{DoxyCompactList}\small\item\em This method may not be overridden in asynchronous commands. Use Execute\+Async for your command\textquotesingle{}s logic instead. \end{DoxyCompactList}\item 
+abstract Task \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a98bac975d12c5b43febbb767d254b610}{Execute\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Executes the command asynchronously. Remember to add the async keyword as that is not considered part of the method signature and cannot be added to abstract methods. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Task \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_abffdeda7d6b80f3d4cfb2aee7eb627c9}{Command\+Task}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The task for the completion of the Execute\+Async method after it reaches its first await and returns control back to the calling method (\mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_a1835a00e303b49b24b6c469c0645b53f}{Command\+Stream.\+Try\+Execute\+Next()}}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a67c1faf178de5fbb75d8e3b46c07c91c}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a67c1faf178de5fbb75d8e3b46c07c91c}} 
+Action {\bfseries On\+Task\+Completed}
+\begin{DoxyCompactList}\small\item\em This event is invoked when Command\+Task is completed. I.\+E. -\/ when we reach the end of \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a98bac975d12c5b43febbb767d254b610}{Execute\+Async()}}. Subscribe to it to preform an action at after the command has fully completed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class of all commands who\textquotesingle{}s execute method involves asynchronous tasks 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_ae8c309ace68936bb585e9626f90fd5c0}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_ae8c309ace68936bb585e9626f90fd5c0}} 
+\index{SadSapphicGames.CommandPattern.AsyncCommand@{SadSapphicGames.CommandPattern.AsyncCommand}!Execute@{Execute}}
+\index{Execute@{Execute}!SadSapphicGames.CommandPattern.AsyncCommand@{SadSapphicGames.CommandPattern.AsyncCommand}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily sealed override void Sad\+Sapphic\+Games.\+Command\+Pattern.\+Async\+Command.\+Execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method may not be overridden in asynchronous commands. Use Execute\+Async for your command\textquotesingle{}s logic instead. 
+
+
+
+Implements \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_ae6189e8f9e3fc973c2dd66df8f3ec39c}{Sad\+Sapphic\+Games.\+Command\+Pattern.\+Command}}.
+
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a98bac975d12c5b43febbb767d254b610}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a98bac975d12c5b43febbb767d254b610}} 
+\index{SadSapphicGames.CommandPattern.AsyncCommand@{SadSapphicGames.CommandPattern.AsyncCommand}!ExecuteAsync@{ExecuteAsync}}
+\index{ExecuteAsync@{ExecuteAsync}!SadSapphicGames.CommandPattern.AsyncCommand@{SadSapphicGames.CommandPattern.AsyncCommand}}
+\doxysubsubsection{\texorpdfstring{ExecuteAsync()}{ExecuteAsync()}}
+{\footnotesize\ttfamily abstract Task Sad\+Sapphic\+Games.\+Command\+Pattern.\+Async\+Command.\+Execute\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Executes the command asynchronously. Remember to add the async keyword as that is not considered part of the method signature and cannot be added to abstract methods. 
+
+\begin{DoxyReturn}{Returns}
+The task for the completion of this method after it reaches its first await and returns control to the calling method. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_a27ba6500bb143de893deeab212418a7f}{Sad\+Sapphic\+Games.\+Command\+Pattern.\+IAsync\+Command}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_abffdeda7d6b80f3d4cfb2aee7eb627c9}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_abffdeda7d6b80f3d4cfb2aee7eb627c9}} 
+\index{SadSapphicGames.CommandPattern.AsyncCommand@{SadSapphicGames.CommandPattern.AsyncCommand}!CommandTask@{CommandTask}}
+\index{CommandTask@{CommandTask}!SadSapphicGames.CommandPattern.AsyncCommand@{SadSapphicGames.CommandPattern.AsyncCommand}}
+\doxysubsubsection{\texorpdfstring{CommandTask}{CommandTask}}
+{\footnotesize\ttfamily Task Sad\+Sapphic\+Games.\+Command\+Pattern.\+Async\+Command.\+Command\+Task\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The task for the completion of the Execute\+Async method after it reaches its first await and returns control back to the calling method (\mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_a1835a00e303b49b24b6c469c0645b53f}{Command\+Stream.\+Try\+Execute\+Next()}}) 
+
+
+
+Implements \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_abbc8ae3e847b06cf970c7996a135f3e2}{Sad\+Sapphic\+Games.\+Command\+Pattern.\+IAsync\+Command}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Layla/\+Documents/\+My Docs/\+Game\+Dev/\+Command\+Pattern\+Development/\+Assets/\+Packages/\+Command\+Pattern/\+Runtime/\+Commands/Async\+Command.\+cs\end{DoxyCompactItemize}

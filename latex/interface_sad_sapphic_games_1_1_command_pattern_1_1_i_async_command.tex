@@ -1,0 +1,74 @@
+\hypertarget{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command}{}\doxysection{Sad\+Sapphic\+Games.\+Command\+Pattern.\+IAsync\+Command Interface Reference}
+\label{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command}\index{SadSapphicGames.CommandPattern.IAsyncCommand@{SadSapphicGames.CommandPattern.IAsyncCommand}}
+
+
+This Interface of the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} abstract class, Similar to \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command}{ICommand}} you probably don\textquotesingle{}t need to worry about this unless you want to define your own base class for async commands without inheriting \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}}  
+
+
+Inheritance diagram for Sad\+Sapphic\+Games.\+Command\+Pattern.\+IAsync\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract Task \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_a27ba6500bb143de893deeab212418a7f}{Execute\+Async}} ()
+\begin{DoxyCompactList}\small\item\em This is where the logic of executing the command should be placed for an \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}}, Execute should just store the return in Command\+Task and setup the On\+Task\+Completed method. Remember to make this method async as that isn\textquotesingle{}t considered part of its signature. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Task \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_abbc8ae3e847b06cf970c7996a135f3e2}{Command\+Task}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This should get the asynchronous task returned by Execute\+Async after it reaches its first await \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_a59e47b0037c7968f9538850bc856e64b}\label{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_a59e47b0037c7968f9538850bc856e64b}} 
+Action {\bfseries On\+Task\+Completed}
+\begin{DoxyCompactList}\small\item\em This event should be invoked when Command\+Task is completed so the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}} that executed this object can remove the task from its running\+Command\+Tasks list \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This Interface of the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} abstract class, Similar to \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command}{ICommand}} you probably don\textquotesingle{}t need to worry about this unless you want to define your own base class for async commands without inheriting \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_a27ba6500bb143de893deeab212418a7f}\label{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_a27ba6500bb143de893deeab212418a7f}} 
+\index{SadSapphicGames.CommandPattern.IAsyncCommand@{SadSapphicGames.CommandPattern.IAsyncCommand}!ExecuteAsync@{ExecuteAsync}}
+\index{ExecuteAsync@{ExecuteAsync}!SadSapphicGames.CommandPattern.IAsyncCommand@{SadSapphicGames.CommandPattern.IAsyncCommand}}
+\doxysubsubsection{\texorpdfstring{ExecuteAsync()}{ExecuteAsync()}}
+{\footnotesize\ttfamily abstract Task Sad\+Sapphic\+Games.\+Command\+Pattern.\+IAsync\+Command.\+Execute\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This is where the logic of executing the command should be placed for an \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}}, Execute should just store the return in Command\+Task and setup the On\+Task\+Completed method. Remember to make this method async as that isn\textquotesingle{}t considered part of its signature. 
+
+\begin{DoxyReturn}{Returns}
+The Task representing the completion of the method after it reaches its first await statement
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a98bac975d12c5b43febbb767d254b610}{Sad\+Sapphic\+Games.\+Command\+Pattern.\+Async\+Command}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_abbc8ae3e847b06cf970c7996a135f3e2}\label{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_abbc8ae3e847b06cf970c7996a135f3e2}} 
+\index{SadSapphicGames.CommandPattern.IAsyncCommand@{SadSapphicGames.CommandPattern.IAsyncCommand}!CommandTask@{CommandTask}}
+\index{CommandTask@{CommandTask}!SadSapphicGames.CommandPattern.IAsyncCommand@{SadSapphicGames.CommandPattern.IAsyncCommand}}
+\doxysubsubsection{\texorpdfstring{CommandTask}{CommandTask}}
+{\footnotesize\ttfamily Task Sad\+Sapphic\+Games.\+Command\+Pattern.\+IAsync\+Command.\+Command\+Task\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+This should get the asynchronous task returned by Execute\+Async after it reaches its first await 
+
+
+
+Implemented in \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_abffdeda7d6b80f3d4cfb2aee7eb627c9}{Sad\+Sapphic\+Games.\+Command\+Pattern.\+Async\+Command}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Layla/\+Documents/\+My Docs/\+Game\+Dev/\+Command\+Pattern\+Development/\+Assets/\+Packages/\+Command\+Pattern/\+Runtime/\+Interfaces/IAsync\+Command.\+cs\end{DoxyCompactItemize}

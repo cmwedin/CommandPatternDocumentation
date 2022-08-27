@@ -3,12 +3,18 @@
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
+class \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}}
+\begin{DoxyCompactList}\small\item\em The base class of all commands who\textquotesingle{}s execute method involves asynchronous tasks \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}}
 \begin{DoxyCompactList}\small\item\em The base class of all commands \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}}
 \begin{DoxyCompactList}\small\item\em This is the object that stores commands to be invoked and executes them when told to by the client. It has no knowledge of the implementation of commands beyond their interfaces. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command}{Composite\+Command}}
 \begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} that is composed of multiple child commands, all of which are executed together and leave one record in the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}}\textquotesingle{}s history. $<$remark$>$ For more information on this type of object seek external documentation on the composite design pattern $<$/remark$>$ \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command}{IAsync\+Command}}
+\begin{DoxyCompactList}\small\item\em This Interface of the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} abstract class, Similar to \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command}{ICommand}} you probably don\textquotesingle{}t need to worry about this unless you want to define your own base class for async commands without inheriting \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command}{ICommand}}
+\begin{DoxyCompactList}\small\item\em This is the Interface of the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} abstract class, probably not needed unless you want to introduce your own base class for your commands that doesn\textquotesingle{}t inherit from the packages abstract \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} \end{DoxyCompactList}\item 
 interface \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_failable}{IFailable}}
 \begin{DoxyCompactList}\small\item\em Interface implemented by commands that could fail to execute. Commands that would fail do not have their execute method invoked and are not recorded in the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}}\textquotesingle{}s history \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_irreversible_composite_failure_exception}{Irreversible\+Composite\+Failure\+Exception}}

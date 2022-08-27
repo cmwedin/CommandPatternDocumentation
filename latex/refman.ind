@@ -2,152 +2,178 @@
 
   \item {AddChild}
     \subitem {SadSapphicGames.CommandPattern.CompositeCommand}, 
-		\hyperpage{15}
+		\hyperpage{18}
 
   \indexspace
 
   \item {CommandStream}
     \subitem {SadSapphicGames.CommandPattern.CommandStream}, 
-		\hyperpage{11}
+		\hyperpage{13}
+  \item {CommandTask}
+    \subitem {SadSapphicGames.CommandPattern.AsyncCommand}, 
+		\hyperpage{10}
+    \subitem {SadSapphicGames.CommandPattern.IAsyncCommand}, 
+		\hyperpage{20}
 
   \indexspace
 
   \item {DropCommandHistory}
     \subitem {SadSapphicGames.CommandPattern.SingletonCommandManager}, 
-		\hyperpage{24}
+		\hyperpage{29}
   \item {DropHistory}
     \subitem {SadSapphicGames.CommandPattern.CommandStream}, 
-		\hyperpage{11}
+		\hyperpage{13}
   \item {DropQueue}
     \subitem {SadSapphicGames.CommandPattern.CommandStream}, 
-		\hyperpage{11}
+		\hyperpage{13}
 
   \indexspace
 
   \item {Execute}
-    \subitem {SadSapphicGames.CommandPattern.Command}, \hyperpage{9}
+    \subitem {SadSapphicGames.CommandPattern.AsyncCommand}, 
+		\hyperpage{10}
+    \subitem {SadSapphicGames.CommandPattern.Command}, \hyperpage{11}
     \subitem {SadSapphicGames.CommandPattern.CompositeCommand}, 
-		\hyperpage{16}
+		\hyperpage{18}
+    \subitem {SadSapphicGames.CommandPattern.ICommand}, \hyperpage{21}
     \subitem {SadSapphicGames.CommandPattern.NullCommand}, 
-		\hyperpage{19}
+		\hyperpage{24}
+  \item {ExecuteAsync}
+    \subitem {SadSapphicGames.CommandPattern.AsyncCommand}, 
+		\hyperpage{10}
+    \subitem {SadSapphicGames.CommandPattern.IAsyncCommand}, 
+		\hyperpage{20}
   \item {ExecuteFullQueue}
     \subitem {SadSapphicGames.CommandPattern.CommandStream}, 
-		\hyperpage{12}
+		\hyperpage{14}
 
   \indexspace
 
   \item {ForceQueueUndoCommand}
     \subitem {SadSapphicGames.CommandPattern.CommandStream}, 
-		\hyperpage{12}
+		\hyperpage{14}
     \subitem {SadSapphicGames.CommandPattern.SingletonCommandManager}, 
-		\hyperpage{24}
+		\hyperpage{29}
 
   \indexspace
 
   \item {GetCommandHistory}
     \subitem {SadSapphicGames.CommandPattern.CommandStream}, 
-		\hyperpage{12}
+		\hyperpage{14}
     \subitem {SadSapphicGames.CommandPattern.SingletonCommandManager}, 
-		\hyperpage{25}
+		\hyperpage{30}
   \item {GetCommandQueue}
     \subitem {SadSapphicGames.CommandPattern.CommandStream}, 
-		\hyperpage{13}
+		\hyperpage{15}
+  \item {GetRunningCommandTasks}
+    \subitem {SadSapphicGames.CommandPattern.CommandStream}, 
+		\hyperpage{15}
   \item {GetUndoCommand}
-    \subitem {SadSapphicGames.CommandPattern.IUndoable}, \hyperpage{18}
+    \subitem {SadSapphicGames.CommandPattern.IUndoable}, \hyperpage{23}
     \subitem {SadSapphicGames.CommandPattern.NullCommand}, 
-		\hyperpage{19}
+		\hyperpage{24}
     \subitem {SadSapphicGames.CommandPattern.NullCompositeCommand}, 
-		\hyperpage{20}
+		\hyperpage{26}
 
   \indexspace
 
   \item {NullCompositeCommand}
     \subitem {SadSapphicGames.CommandPattern.NullCompositeCommand}, 
-		\hyperpage{20}
+		\hyperpage{25}
 
   \indexspace
 
   \item {QueueCommand}
     \subitem {SadSapphicGames.CommandPattern.CommandStream}, 
-		\hyperpage{13}
+		\hyperpage{15}
     \subitem {SadSapphicGames.CommandPattern.SingletonCommandManager}, 
-		\hyperpage{25}
+		\hyperpage{30}
   \item {QueueCommands}
     \subitem {SadSapphicGames.CommandPattern.CommandStream}, 
-		\hyperpage{13}
+		\hyperpage{15}
     \subitem {SadSapphicGames.CommandPattern.SingletonCommandManager}, 
-		\hyperpage{25}
+		\hyperpage{30}
 
   \indexspace
 
   \item {SadSapphicGames}, \hyperpage{7}
   \item {SadSapphicGames.CommandPattern}, \hyperpage{7}
-  \item {SadSapphicGames.CommandPattern.Command}, \hyperpage{9}
-    \subitem {Execute}, \hyperpage{9}
-  \item {SadSapphicGames.CommandPattern.CommandStream}, \hyperpage{10}
-    \subitem {CommandStream}, \hyperpage{11}
-    \subitem {DropHistory}, \hyperpage{11}
-    \subitem {DropQueue}, \hyperpage{11}
-    \subitem {ExecuteFullQueue}, \hyperpage{12}
-    \subitem {ForceQueueUndoCommand}, \hyperpage{12}
-    \subitem {GetCommandHistory}, \hyperpage{12}
-    \subitem {GetCommandQueue}, \hyperpage{13}
-    \subitem {QueueCommand}, \hyperpage{13}
-    \subitem {QueueCommands}, \hyperpage{13}
-    \subitem {TryExecuteNext}, \hyperpage{13, 14}
-    \subitem {TryQueueUndoCommand}, \hyperpage{14}
+  \item {SadSapphicGames.CommandPattern.AsyncCommand}, \hyperpage{9}
+    \subitem {CommandTask}, \hyperpage{10}
+    \subitem {Execute}, \hyperpage{10}
+    \subitem {ExecuteAsync}, \hyperpage{10}
+  \item {SadSapphicGames.CommandPattern.Command}, \hyperpage{11}
+    \subitem {Execute}, \hyperpage{11}
+  \item {SadSapphicGames.CommandPattern.CommandStream}, \hyperpage{11}
+    \subitem {CommandStream}, \hyperpage{13}
+    \subitem {DropHistory}, \hyperpage{13}
+    \subitem {DropQueue}, \hyperpage{13}
+    \subitem {ExecuteFullQueue}, \hyperpage{14}
+    \subitem {ForceQueueUndoCommand}, \hyperpage{14}
+    \subitem {GetCommandHistory}, \hyperpage{14}
+    \subitem {GetCommandQueue}, \hyperpage{15}
+    \subitem {GetRunningCommandTasks}, \hyperpage{15}
+    \subitem {QueueCommand}, \hyperpage{15}
+    \subitem {QueueCommands}, \hyperpage{15}
+    \subitem {TryExecuteNext}, \hyperpage{16}
+    \subitem {TryQueueUndoCommand}, \hyperpage{16}
   \item {SadSapphicGames.CommandPattern.CompositeCommand}, 
-		\hyperpage{15}
-    \subitem {AddChild}, \hyperpage{15}
-    \subitem {Execute}, \hyperpage{16}
-  \item {SadSapphicGames.CommandPattern.IFailable}, \hyperpage{16}
-    \subitem {WouldFail}, \hyperpage{17}
-  \item {SadSapphicGames.CommandPattern.IrreversibleCompositeFailureException}, 
 		\hyperpage{17}
-  \item {SadSapphicGames.CommandPattern.IUndoable}, \hyperpage{18}
-    \subitem {GetUndoCommand}, \hyperpage{18}
-  \item {SadSapphicGames.CommandPattern.NullCommand}, \hyperpage{19}
-    \subitem {Execute}, \hyperpage{19}
-    \subitem {GetUndoCommand}, \hyperpage{19}
-  \item {SadSapphicGames.CommandPattern.NullCompositeCommand}, 
-		\hyperpage{20}
-    \subitem {GetUndoCommand}, \hyperpage{20}
-    \subitem {NullCompositeCommand}, \hyperpage{20}
-  \item {SadSapphicGames.CommandPattern.ReversibleCompositeFailureException}, 
-		\hyperpage{21}
-  \item {SadSapphicGames.CommandPattern.SimpleComposite}, 
+    \subitem {AddChild}, \hyperpage{18}
+    \subitem {Execute}, \hyperpage{18}
+  \item {SadSapphicGames.CommandPattern.IAsyncCommand}, \hyperpage{19}
+    \subitem {CommandTask}, \hyperpage{20}
+    \subitem {ExecuteAsync}, \hyperpage{20}
+  \item {SadSapphicGames.CommandPattern.ICommand}, \hyperpage{20}
+    \subitem {Execute}, \hyperpage{21}
+  \item {SadSapphicGames.CommandPattern.IFailable}, \hyperpage{21}
+    \subitem {WouldFail}, \hyperpage{22}
+  \item {SadSapphicGames.CommandPattern.IrreversibleCompositeFailureException}, 
 		\hyperpage{22}
-    \subitem {SimpleComposite}, \hyperpage{22}
+  \item {SadSapphicGames.CommandPattern.IUndoable}, \hyperpage{23}
+    \subitem {GetUndoCommand}, \hyperpage{23}
+  \item {SadSapphicGames.CommandPattern.NullCommand}, \hyperpage{24}
+    \subitem {Execute}, \hyperpage{24}
+    \subitem {GetUndoCommand}, \hyperpage{24}
+  \item {SadSapphicGames.CommandPattern.NullCompositeCommand}, 
+		\hyperpage{25}
+    \subitem {GetUndoCommand}, \hyperpage{26}
+    \subitem {NullCompositeCommand}, \hyperpage{25}
+  \item {SadSapphicGames.CommandPattern.ReversibleCompositeFailureException}, 
+		\hyperpage{26}
+  \item {SadSapphicGames.CommandPattern.SimpleComposite}, 
+		\hyperpage{27}
+    \subitem {SimpleComposite}, \hyperpage{27}
   \item {SadSapphicGames.CommandPattern.SingletonCommandManager}, 
-		\hyperpage{23}
-    \subitem {DropCommandHistory}, \hyperpage{24}
-    \subitem {ForceQueueUndoCommand}, \hyperpage{24}
-    \subitem {GetCommandHistory}, \hyperpage{25}
-    \subitem {QueueCommand}, \hyperpage{25}
-    \subitem {QueueCommands}, \hyperpage{25}
-    \subitem {ToggleCommandExecution}, \hyperpage{25}
-    \subitem {TryQueueUndoCommand}, \hyperpage{26}
+		\hyperpage{28}
+    \subitem {DropCommandHistory}, \hyperpage{29}
+    \subitem {ForceQueueUndoCommand}, \hyperpage{29}
+    \subitem {GetCommandHistory}, \hyperpage{30}
+    \subitem {QueueCommand}, \hyperpage{30}
+    \subitem {QueueCommands}, \hyperpage{30}
+    \subitem {ToggleCommandExecution}, \hyperpage{30}
+    \subitem {TryQueueUndoCommand}, \hyperpage{31}
   \item {SimpleComposite}
     \subitem {SadSapphicGames.CommandPattern.SimpleComposite}, 
-		\hyperpage{22}
+		\hyperpage{27}
 
   \indexspace
 
   \item {ToggleCommandExecution}
     \subitem {SadSapphicGames.CommandPattern.SingletonCommandManager}, 
-		\hyperpage{25}
+		\hyperpage{30}
   \item {TryExecuteNext}
     \subitem {SadSapphicGames.CommandPattern.CommandStream}, 
-		\hyperpage{13, 14}
+		\hyperpage{16}
   \item {TryQueueUndoCommand}
     \subitem {SadSapphicGames.CommandPattern.CommandStream}, 
-		\hyperpage{14}
+		\hyperpage{16}
     \subitem {SadSapphicGames.CommandPattern.SingletonCommandManager}, 
-		\hyperpage{26}
+		\hyperpage{31}
 
   \indexspace
 
   \item {WouldFail}
-    \subitem {SadSapphicGames.CommandPattern.IFailable}, \hyperpage{17}
+    \subitem {SadSapphicGames.CommandPattern.IFailable}, \hyperpage{22}
 
 \end{theindex}

@@ -13,6 +13,8 @@ Read\+Only\+Collection$<$ \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_p
  \end{DoxyCompactList}\item 
 Read\+Only\+Collection$<$ \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} $>$ \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_ae00e22fb0da8811c50ee16f13dce39a3}{Get\+Command\+Queue}} ()
 \begin{DoxyCompactList}\small\item\em Get the queue of commands to be executed by the command stream. \end{DoxyCompactList}\item 
+Read\+Only\+Collection$<$ Task $>$ \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_aead312da5b6d2708c386a389ed5cf60d}{Get\+Running\+Command\+Tasks}} ()
+\begin{DoxyCompactList}\small\item\em Get the Tasks being being run by Async\+Commands executed by this \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}} \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_ad9cda071a9e6c62206aaebf5b196d301}{Command\+Stream}} (float \+\_\+history\+Depth=Single.\+Positive\+Infinity)
 \begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}} \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_a4afe597a63a586cf7719bf5e780199a0}{Queue\+Command}} (\mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} command)
@@ -27,7 +29,7 @@ bool \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_st
 \begin{DoxyCompactList}\small\item\em Attempt to queue\textquotesingle{}s the undo command of a \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} object implementing \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable}{IUndoable}} if that command exists in this \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}}\textquotesingle{}s history \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_adc53e5a709a1a2f8e699e298725e65dd}{Force\+Queue\+Undo\+Command}} (\mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable}{IUndoable}} command\+To\+Undo)
 \begin{DoxyCompactList}\small\item\em Force the stream to queue\textquotesingle{}s the undo command of a \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} object implementing \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable}{IUndoable}} regardless of whether the command is recorded in this \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}}\textquotesingle{}s history \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_af659f0df9c6267ce6b1180c3995848fd}{Try\+Execute\+Next}} (out \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} next\+Command)
+bool \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_ac6ba7992affea665315ffd52da420794}{Try\+Execute\+Next}} (out \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} top\+Command)
 \begin{DoxyCompactList}\small\item\em Attempts to execute the next command in the queue, returns false if it is empty or the command is \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_failable}{IFailable}} and would fail. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_a1835a00e303b49b24b6c469c0645b53f}{Try\+Execute\+Next}} ()
 \begin{DoxyCompactList}\small\item\em Attempts to execute the next command in the queue, returns false if it is empty or the command is \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_failable}{IFailable}} and would fail. \end{DoxyCompactList}\item 
@@ -158,6 +160,19 @@ Get the queue of commands to be executed by the command stream.
 \begin{DoxyReturn}{Returns}
 The queue of commands the command\+Stream will execute. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_aead312da5b6d2708c386a389ed5cf60d}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_aead312da5b6d2708c386a389ed5cf60d}} 
+\index{SadSapphicGames.CommandPattern.CommandStream@{SadSapphicGames.CommandPattern.CommandStream}!GetRunningCommandTasks@{GetRunningCommandTasks}}
+\index{GetRunningCommandTasks@{GetRunningCommandTasks}!SadSapphicGames.CommandPattern.CommandStream@{SadSapphicGames.CommandPattern.CommandStream}}
+\doxysubsubsection{\texorpdfstring{GetRunningCommandTasks()}{GetRunningCommandTasks()}}
+{\footnotesize\ttfamily Read\+Only\+Collection$<$ Task $>$ Sad\+Sapphic\+Games.\+Command\+Pattern.\+Command\+Stream.\+Get\+Running\+Command\+Tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Tasks being being run by Async\+Commands executed by this \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}} 
+
+\begin{DoxyReturn}{Returns}
+The tasks that are currently being run
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_a4afe597a63a586cf7719bf5e780199a0}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_a4afe597a63a586cf7719bf5e780199a0}} 
 \index{SadSapphicGames.CommandPattern.CommandStream@{SadSapphicGames.CommandPattern.CommandStream}!QueueCommand@{QueueCommand}}
 \index{QueueCommand@{QueueCommand}!SadSapphicGames.CommandPattern.CommandStream@{SadSapphicGames.CommandPattern.CommandStream}}
@@ -201,11 +216,11 @@ Attempts to execute the next command in the queue, returns false if it is empty 
 \begin{DoxyReturn}{Returns}
 False if the command queue is empty, or the next command would fail. True otherwise. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_af659f0df9c6267ce6b1180c3995848fd}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_af659f0df9c6267ce6b1180c3995848fd}} 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_ac6ba7992affea665315ffd52da420794}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_ac6ba7992affea665315ffd52da420794}} 
 \index{SadSapphicGames.CommandPattern.CommandStream@{SadSapphicGames.CommandPattern.CommandStream}!TryExecuteNext@{TryExecuteNext}}
 \index{TryExecuteNext@{TryExecuteNext}!SadSapphicGames.CommandPattern.CommandStream@{SadSapphicGames.CommandPattern.CommandStream}}
 \doxysubsubsection{\texorpdfstring{TryExecuteNext()}{TryExecuteNext()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily bool Sad\+Sapphic\+Games.\+Command\+Pattern.\+Command\+Stream.\+Try\+Execute\+Next (\begin{DoxyParamCaption}\item[{out \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}}}]{next\+Command }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Sad\+Sapphic\+Games.\+Command\+Pattern.\+Command\+Stream.\+Try\+Execute\+Next (\begin{DoxyParamCaption}\item[{out \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}}}]{top\+Command }\end{DoxyParamCaption})}
 
 
 
@@ -213,7 +228,7 @@ Attempts to execute the next command in the queue, returns false if it is empty 
 
 
 \begin{DoxyParams}{Parameters}
-{\em next\+Command} & The command that was next in the queue, null if the queue was empty\\
+{\em top\+Command} & The command that was next in the queue, null if the queue was empty\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

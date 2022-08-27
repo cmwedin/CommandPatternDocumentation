@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.3.0</span>
+   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.3.1</span>
    </div>
    <div id="projectbrief">This package contains a collection of classes and interfaces to allow for quick and consistent implementation of the command pattern across projects.</div>
   </td>
@@ -75,6 +75,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html">AsyncCommand</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class of all commands who's execute method involves asynchronous tasks  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html">Command</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class of all commands  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -83,6 +86,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html">CompositeCommand</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> that is composed of multiple child commands, all of which are executed together and leave one record in the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history. &lt;remark&gt; For more information on this type of object seek external documentation on the composite design pattern &lt;/remark&gt;  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html">IAsyncCommand</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Interface of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> abstract class, Similar to <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html" title="This is the Interface of the Command abstract class, probably not needed unless you want to introduce...">ICommand</a> you probably don't need to worry about this unless you want to define your own base class for async commands without inheriting <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a>  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html">ICommand</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the Interface of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> abstract class, probably not needed unless you want to introduce your own base class for your commands that doesn't inherit from the packages abstract <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a>  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_failable.html">IFailable</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface implemented by commands that could fail to execute. Commands that would fail do not have their execute method invoked and are not recorded in the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_failable.html#details">More...</a><br /></td></tr>
