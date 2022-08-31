@@ -12,9 +12,10 @@ class \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_s
 class \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command}{Composite\+Command}}
 \begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} that is composed of multiple child commands, all of which are executed together and leave one record in the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}}\textquotesingle{}s history. $<$remark$>$ For more information on this type of object seek external documentation on the composite design pattern $<$/remark$>$ \end{DoxyCompactList}\item 
 interface \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command}{IAsync\+Command}}
-\begin{DoxyCompactList}\small\item\em This Interface of the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} abstract class, Similar to \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command}{ICommand}} you probably don\textquotesingle{}t need to worry about this unless you want to define your own base class for async commands without inheriting \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em This Interface of the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} abstract class, It is strongly recommended you use that class rather than implement this yourself unless you are very familiar with asynchronous programming ~\newline
+ \end{DoxyCompactList}\item 
 interface \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command}{ICommand}}
-\begin{DoxyCompactList}\small\item\em This is the Interface of the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} abstract class, probably not needed unless you want to introduce your own base class for your commands that doesn\textquotesingle{}t inherit from the packages abstract \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em This is the Interface of the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} abstract class, unless you are defining your own base type for commands you should probably inherit from \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} over this \end{DoxyCompactList}\item 
 interface \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_failable}{IFailable}}
 \begin{DoxyCompactList}\small\item\em Interface implemented by commands that could fail to execute. Commands that would fail do not have their execute method invoked and are not recorded in the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}}\textquotesingle{}s history \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_irreversible_composite_failure_exception}{Irreversible\+Composite\+Failure\+Exception}}
@@ -31,3 +32,50 @@ class \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_simple_co
 \begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command}{Composite\+Command}} created from a collection of \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}}\textquotesingle{}s that cannot fail \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager}{Singleton\+Command\+Manager}}
 \begin{DoxyCompactList}\small\item\em A singleton manager for a single-\/stream, out of the box implementation of the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} pattern. For more complicated implementations create your own \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}} wrappers. Does not drop Commands from its Command\+History. Executes the next command in the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}} every frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48b}{Execute\+Code}} \{ \newline
+\mbox{\hyperlink{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48ba505a83f220c02df2f85c3810cd9ceb38}{Success}}
+, \mbox{\hyperlink{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48bae139a585510a502bbf1841cf589f5086}{Failure}}
+, \mbox{\hyperlink{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48baf22b60508cb544e1c510cee84cc47dfe}{Queue\+Empty}}
+, \mbox{\hyperlink{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48ba8fd133f308d5224da18e709f33daea2c}{Composite\+Failure}}
+, \newline
+\mbox{\hyperlink{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48ba776b9a2018c48cfe218049ae64f25875}{Awaiting\+Completion}}
+ \}
+\begin{DoxyCompactList}\small\item\em The possible return values of Command\+Stream.\+Try\+Execute\+Next() \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48b}\label{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48b}} 
+\index{SadSapphicGames.CommandPattern@{SadSapphicGames.CommandPattern}!ExecuteCode@{ExecuteCode}}
+\index{ExecuteCode@{ExecuteCode}!SadSapphicGames.CommandPattern@{SadSapphicGames.CommandPattern}}
+\doxysubsubsection{\texorpdfstring{ExecuteCode}{ExecuteCode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48b}{Sad\+Sapphic\+Games.\+Command\+Pattern.\+Execute\+Code}}}
+
+
+
+The possible return values of \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_a820f8a982580afcb40ac7f053e6bca29}{Command\+Stream.\+Try\+Execute\+Next()}} 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Success@{Success}!SadSapphicGames.CommandPattern@{SadSapphicGames.CommandPattern}}\index{SadSapphicGames.CommandPattern@{SadSapphicGames.CommandPattern}!Success@{Success}}}\mbox{\Hypertarget{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48ba505a83f220c02df2f85c3810cd9ceb38}\label{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48ba505a83f220c02df2f85c3810cd9ceb38}} 
+Success&Top \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} executed successfully \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Failure@{Failure}!SadSapphicGames.CommandPattern@{SadSapphicGames.CommandPattern}}\index{SadSapphicGames.CommandPattern@{SadSapphicGames.CommandPattern}!Failure@{Failure}}}\mbox{\Hypertarget{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48bae139a585510a502bbf1841cf589f5086}\label{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48bae139a585510a502bbf1841cf589f5086}} 
+Failure&Top \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} would fail \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{QueueEmpty@{QueueEmpty}!SadSapphicGames.CommandPattern@{SadSapphicGames.CommandPattern}}\index{SadSapphicGames.CommandPattern@{SadSapphicGames.CommandPattern}!QueueEmpty@{QueueEmpty}}}\mbox{\Hypertarget{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48baf22b60508cb544e1c510cee84cc47dfe}\label{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48baf22b60508cb544e1c510cee84cc47dfe}} 
+Queue\+Empty&\mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} queue was empty \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CompositeFailure@{CompositeFailure}!SadSapphicGames.CommandPattern@{SadSapphicGames.CommandPattern}}\index{SadSapphicGames.CommandPattern@{SadSapphicGames.CommandPattern}!CompositeFailure@{CompositeFailure}}}\mbox{\Hypertarget{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48ba8fd133f308d5224da18e709f33daea2c}\label{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48ba8fd133f308d5224da18e709f33daea2c}} 
+Composite\+Failure&Top \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} was a \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command}{Composite\+Command}} that did not indicate it would fail but failed partway through execution -\/ was reversible \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AwaitingCompletion@{AwaitingCompletion}!SadSapphicGames.CommandPattern@{SadSapphicGames.CommandPattern}}\index{SadSapphicGames.CommandPattern@{SadSapphicGames.CommandPattern}!AwaitingCompletion@{AwaitingCompletion}}}\mbox{\Hypertarget{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48ba776b9a2018c48cfe218049ae64f25875}\label{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48ba776b9a2018c48cfe218049ae64f25875}} 
+Awaiting\+Completion&Top command was an \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} that is awaiting completion \\
+\hline
+
+\end{DoxyEnumFields}

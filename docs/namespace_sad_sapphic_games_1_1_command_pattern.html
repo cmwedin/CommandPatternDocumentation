@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.3.1</span>
+   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.3.3</span>
    </div>
    <div id="projectbrief">This package contains a collection of classes and interfaces to allow for quick and consistent implementation of the command pattern across projects.</div>
   </td>
@@ -68,7 +68,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">SadSapphicGames.CommandPattern Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -88,10 +89,11 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> that is composed of multiple child commands, all of which are executed together and leave one record in the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history. &lt;remark&gt; For more information on this type of object seek external documentation on the composite design pattern &lt;/remark&gt;  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html">IAsyncCommand</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Interface of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> abstract class, Similar to <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html" title="This is the Interface of the Command abstract class, probably not needed unless you want to introduce...">ICommand</a> you probably don't need to worry about this unless you want to define your own base class for async commands without inheriting <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a>  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Interface of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> abstract class, It is strongly recommended you use that class rather than implement this yourself unless you are very familiar with asynchronous programming <br  />
+  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html">ICommand</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the Interface of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> abstract class, probably not needed unless you want to introduce your own base class for your commands that doesn't inherit from the packages abstract <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a>  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the Interface of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> abstract class, unless you are defining your own base type for commands you should probably inherit from <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> over this  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_failable.html">IFailable</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface implemented by commands that could fail to execute. Commands that would fail do not have their execute method invoked and are not recorded in the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_failable.html#details">More...</a><br /></td></tr>
@@ -117,7 +119,50 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html">SingletonCommandManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A singleton manager for a single-stream, out of the box implementation of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> pattern. For more complicated implementations create your own <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> wrappers. Does not drop Commands from its CommandHistory. Executes the next command in the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> every frame.  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a5342d05658bca087178dc221b4bba48b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48b">ExecuteCode</a> { <br />
+&#160;&#160;<a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48ba505a83f220c02df2f85c3810cd9ceb38">Success</a>
+, <a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48bae139a585510a502bbf1841cf589f5086">Failure</a>
+, <a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48baf22b60508cb544e1c510cee84cc47dfe">QueueEmpty</a>
+, <a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48ba8fd133f308d5224da18e709f33daea2c">CompositeFailure</a>
+, <br />
+&#160;&#160;<a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48ba776b9a2018c48cfe218049ae64f25875">AwaitingCompletion</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a5342d05658bca087178dc221b4bba48b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The possible return values of CommandStream.TryExecuteNext()  <a href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48b">More...</a><br /></td></tr>
+<tr class="separator:a5342d05658bca087178dc221b4bba48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a5342d05658bca087178dc221b4bba48b" name="a5342d05658bca087178dc221b4bba48b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5342d05658bca087178dc221b4bba48b">&#9670;&nbsp;</a></span>ExecuteCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48b">SadSapphicGames.CommandPattern.ExecuteCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The possible return values of <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a820f8a982580afcb40ac7f053e6bca29" title="Attempts to execute the next command in the queue, returns false if it is empty or the command is IFa...">CommandStream.TryExecuteNext()</a> </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5342d05658bca087178dc221b4bba48ba505a83f220c02df2f85c3810cd9ceb38" name="a5342d05658bca087178dc221b4bba48ba505a83f220c02df2f85c3810cd9ceb38"></a>Success&#160;</td><td class="fielddoc"><p >Top <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> executed successfully </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5342d05658bca087178dc221b4bba48bae139a585510a502bbf1841cf589f5086" name="a5342d05658bca087178dc221b4bba48bae139a585510a502bbf1841cf589f5086"></a>Failure&#160;</td><td class="fielddoc"><p >Top <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> would fail </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5342d05658bca087178dc221b4bba48baf22b60508cb544e1c510cee84cc47dfe" name="a5342d05658bca087178dc221b4bba48baf22b60508cb544e1c510cee84cc47dfe"></a>QueueEmpty&#160;</td><td class="fielddoc"><p ><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> queue was empty </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5342d05658bca087178dc221b4bba48ba8fd133f308d5224da18e709f33daea2c" name="a5342d05658bca087178dc221b4bba48ba8fd133f308d5224da18e709f33daea2c"></a>CompositeFailure&#160;</td><td class="fielddoc"><p >Top <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> was a <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html" title="A Command that is composed of multiple child commands, all of which are executed together and leave o...">CompositeCommand</a> that did not indicate it would fail but failed partway through execution - was reversible </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5342d05658bca087178dc221b4bba48ba776b9a2018c48cfe218049ae64f25875" name="a5342d05658bca087178dc221b4bba48ba776b9a2018c48cfe218049ae64f25875"></a>AwaitingCompletion&#160;</td><td class="fielddoc"><p >Top command was an <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> that is awaiting completion </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

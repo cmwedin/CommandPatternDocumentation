@@ -17,18 +17,37 @@ Inheritance diagram for Sad\+Sapphic\+Games.\+Command\+Pattern.\+Async\+Command\
 sealed override void \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_ae8c309ace68936bb585e9626f90fd5c0}{Execute}} ()
 \begin{DoxyCompactList}\small\item\em This method may not be overridden in asynchronous commands. Use Execute\+Async for your command\textquotesingle{}s logic instead. \end{DoxyCompactList}\item 
 abstract Task \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a98bac975d12c5b43febbb767d254b610}{Execute\+Async}} ()
-\begin{DoxyCompactList}\small\item\em Executes the command asynchronously. Remember to add the async keyword as that is not considered part of the method signature and cannot be added to abstract methods. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Executes the command asynchronously. Remember to add the async keyword as that is not considered part of the method signature and cannot be added to abstract methods. ~\newline
+ IMPORTANT\+: if you want to be able to cancel the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}}\textquotesingle{}s task you must invoke Cancellation\+Token.\+Throw\+If\+Cancellation\+Requested() within this method somewhere after the first await. If you do not do so attempting to cancel it will do nothing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_af623b567c052e6b7333619c6b9d957a9}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_af623b567c052e6b7333619c6b9d957a9}} 
+{\bfseries Async\+Command} ()
+\begin{DoxyCompactList}\small\item\em Created the cancellation token of the async command and sets up its disposal once the task completes (wether that is from success, cancellation, or faulting) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
 Task \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_abffdeda7d6b80f3d4cfb2aee7eb627c9}{Command\+Task}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\begin{DoxyCompactList}\small\item\em The task for the completion of the Execute\+Async method after it reaches its first await and returns control back to the calling method (\mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_a1835a00e303b49b24b6c469c0645b53f}{Command\+Stream.\+Try\+Execute\+Next()}}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The task for the completion of the Execute\+Async method after it reaches its first await and returns control back to the calling method (\mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_a820f8a982580afcb40ac7f053e6bca29}{Command\+Stream.\+Try\+Execute\+Next()}}) \end{DoxyCompactList}\item 
+Cancellation\+Token\+Source \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a1eebc70d2124b7a46b567aa42be25f57}{Cancellation\+Token\+Source}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This can be used to signal to Command\+Task that it should be canceled, provided that you respond to Cancellation\+Token indicating it has been canceled from Execute\+Async \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a9a33c5f6937809d124552c0f2071ff08}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a9a33c5f6937809d124552c0f2071ff08}} 
+Cancellation\+Token {\bfseries Cancellation\+Token}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This can be used in Execute\+Async to determine if the Command\+Task has been canceled. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Events}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a67c1faf178de5fbb75d8e3b46c07c91c}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a67c1faf178de5fbb75d8e3b46c07c91c}} 
 Action {\bfseries On\+Task\+Completed}
-\begin{DoxyCompactList}\small\item\em This event is invoked when Command\+Task is completed. I.\+E. -\/ when we reach the end of \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a98bac975d12c5b43febbb767d254b610}{Execute\+Async()}}. Subscribe to it to preform an action at after the command has fully completed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This event is invoked when Command\+Task is completed. I.\+E. -\/ when we reach the end of \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a98bac975d12c5b43febbb767d254b610}{Execute\+Async()}}. Subscribe to it to preform an action at after the command has fully completed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a56c8a95b1d95cfce2d1803ce268986cd}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a56c8a95b1d95cfce2d1803ce268986cd}} 
+Action {\bfseries On\+Task\+Canceled}
+\begin{DoxyCompactList}\small\item\em This event is invoked if the command task is canceled. Most bookkeeping that occurs in this situation is handled by the package but you can subscribe to this as well if needed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a4478a8bcf207f94b287719719a5d5bbb}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a4478a8bcf207f94b287719719a5d5bbb}} 
+Action$<$ Exception $>$ {\bfseries On\+Task\+Faulted}
+\begin{DoxyCompactList}\small\item\em This event is invoked if the command task throws an exception. ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -57,7 +76,8 @@ Implements \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_comm
 
 
 
-Executes the command asynchronously. Remember to add the async keyword as that is not considered part of the method signature and cannot be added to abstract methods. 
+Executes the command asynchronously. Remember to add the async keyword as that is not considered part of the method signature and cannot be added to abstract methods. ~\newline
+ IMPORTANT\+: if you want to be able to cancel the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}}\textquotesingle{}s task you must invoke Cancellation\+Token.\+Throw\+If\+Cancellation\+Requested() within this method somewhere after the first await. If you do not do so attempting to cancel it will do nothing. 
 
 \begin{DoxyReturn}{Returns}
 The task for the completion of this method after it reaches its first await and returns control to the calling method. 
@@ -69,6 +89,20 @@ Implements \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_
 
 
 \doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a1eebc70d2124b7a46b567aa42be25f57}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a1eebc70d2124b7a46b567aa42be25f57}} 
+\index{SadSapphicGames.CommandPattern.AsyncCommand@{SadSapphicGames.CommandPattern.AsyncCommand}!CancellationTokenSource@{CancellationTokenSource}}
+\index{CancellationTokenSource@{CancellationTokenSource}!SadSapphicGames.CommandPattern.AsyncCommand@{SadSapphicGames.CommandPattern.AsyncCommand}}
+\doxysubsubsection{\texorpdfstring{CancellationTokenSource}{CancellationTokenSource}}
+{\footnotesize\ttfamily Cancellation\+Token\+Source Sad\+Sapphic\+Games.\+Command\+Pattern.\+Async\+Command.\+Cancellation\+Token\+Source\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+This can be used to signal to Command\+Task that it should be canceled, provided that you respond to Cancellation\+Token indicating it has been canceled from Execute\+Async 
+
+
+
+Implements \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_a3fefa0d47a88325e7b22753396c54a73}{Sad\+Sapphic\+Games.\+Command\+Pattern.\+IAsync\+Command}}.
+
 \mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_abffdeda7d6b80f3d4cfb2aee7eb627c9}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_abffdeda7d6b80f3d4cfb2aee7eb627c9}} 
 \index{SadSapphicGames.CommandPattern.AsyncCommand@{SadSapphicGames.CommandPattern.AsyncCommand}!CommandTask@{CommandTask}}
 \index{CommandTask@{CommandTask}!SadSapphicGames.CommandPattern.AsyncCommand@{SadSapphicGames.CommandPattern.AsyncCommand}}
@@ -77,7 +111,7 @@ Implements \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_
 
 
 
-The task for the completion of the Execute\+Async method after it reaches its first await and returns control back to the calling method (\mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_a1835a00e303b49b24b6c469c0645b53f}{Command\+Stream.\+Try\+Execute\+Next()}}) 
+The task for the completion of the Execute\+Async method after it reaches its first await and returns control back to the calling method (\mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_a820f8a982580afcb40ac7f053e6bca29}{Command\+Stream.\+Try\+Execute\+Next()}}) 
 
 
 

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.3.1</span>
+   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.3.3</span>
    </div>
    <div id="projectbrief">This package contains a collection of classes and interfaces to allow for quick and consistent implementation of the command pattern across projects.</div>
   </td>
@@ -76,7 +76,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>This Interface of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> abstract class, Similar to <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html" title="This is the Interface of the Command abstract class, probably not needed unless you want to introduce...">ICommand</a> you probably don't need to worry about this unless you want to define your own base class for async commands without inheriting <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a>  
+<p>This Interface of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> abstract class, It is strongly recommended you use that class rather than implement this yourself unless you are very familiar with asynchronous programming <br  />
+  
  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for SadSapphicGames.CommandPattern.IAsyncCommand:</div>
@@ -84,7 +85,7 @@ Inheritance diagram for SadSapphicGames.CommandPattern.IAsyncCommand:</div>
  <div class="center">
   <img src="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.png" usemap="#SadSapphicGames.CommandPattern.IAsyncCommand_map" alt=""/>
   <map id="SadSapphicGames.CommandPattern.IAsyncCommand_map" name="SadSapphicGames.CommandPattern.IAsyncCommand_map">
-<area href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html" title="This is the Interface of the Command abstract class, probably not needed unless you want to introduce..." alt="SadSapphicGames.CommandPattern.ICommand" shape="rect" coords="0,0,315,24"/>
+<area href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html" title="This is the Interface of the Command abstract class, unless you are defining your own base type for c..." alt="SadSapphicGames.CommandPattern.ICommand" shape="rect" coords="0,0,315,24"/>
 <area href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks" alt="SadSapphicGames.CommandPattern.AsyncCommand" shape="rect" coords="0,112,315,136"/>
   </map>
 </div></div>
@@ -104,16 +105,28 @@ Properties</h2></td></tr>
 <tr class="memitem:abbc8ae3e847b06cf970c7996a135f3e2"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#abbc8ae3e847b06cf970c7996a135f3e2">CommandTask</a><code> [get]</code></td></tr>
 <tr class="memdesc:abbc8ae3e847b06cf970c7996a135f3e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should get the asynchronous task returned by ExecuteAsync after it reaches its first await  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#abbc8ae3e847b06cf970c7996a135f3e2">More...</a><br /></td></tr>
 <tr class="separator:abbc8ae3e847b06cf970c7996a135f3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fefa0d47a88325e7b22753396c54a73"><td class="memItemLeft" align="right" valign="top">CancellationTokenSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#a3fefa0d47a88325e7b22753396c54a73">CancellationTokenSource</a><code> [get]</code></td></tr>
+<tr class="memdesc:a3fefa0d47a88325e7b22753396c54a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">This can be used to Cancel the task after it has been started.  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#a3fefa0d47a88325e7b22753396c54a73">More...</a><br /></td></tr>
+<tr class="separator:a3fefa0d47a88325e7b22753396c54a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="events" name="events"></a>
 Events</h2></td></tr>
 <tr class="memitem:a59e47b0037c7968f9538850bc856e64b"><td class="memItemLeft" align="right" valign="top"><a id="a59e47b0037c7968f9538850bc856e64b" name="a59e47b0037c7968f9538850bc856e64b"></a>
 Action&#160;</td><td class="memItemRight" valign="bottom"><b>OnTaskCompleted</b></td></tr>
-<tr class="memdesc:a59e47b0037c7968f9538850bc856e64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event should be invoked when CommandTask is completed so the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a> that executed this object can remove the task from its runningCommandTasks list <br /></td></tr>
+<tr class="memdesc:a59e47b0037c7968f9538850bc856e64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event should be invoked when CommandTask is successfully completed. <br /></td></tr>
 <tr class="separator:a59e47b0037c7968f9538850bc856e64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4420e918e851b0cc7819630405934ba3"><td class="memItemLeft" align="right" valign="top"><a id="a4420e918e851b0cc7819630405934ba3" name="a4420e918e851b0cc7819630405934ba3"></a>
+Action&#160;</td><td class="memItemRight" valign="bottom"><b>OnTaskCanceled</b></td></tr>
+<tr class="memdesc:a4420e918e851b0cc7819630405934ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event should be invoked when CommandTask is cancelled. <br /></td></tr>
+<tr class="separator:a4420e918e851b0cc7819630405934ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9986cd93087b20194c24e166e820325b"><td class="memItemLeft" align="right" valign="top"><a id="a9986cd93087b20194c24e166e820325b" name="a9986cd93087b20194c24e166e820325b"></a>
+Action&lt; Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnTaskFaulted</b></td></tr>
+<tr class="memdesc:a9986cd93087b20194c24e166e820325b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event should be invoked when CommandTask throws an exception <br /></td></tr>
+<tr class="separator:a9986cd93087b20194c24e166e820325b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >This Interface of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> abstract class, Similar to <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html" title="This is the Interface of the Command abstract class, probably not needed unless you want to introduce...">ICommand</a> you probably don't need to worry about this unless you want to define your own base class for async commands without inheriting <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> </p>
+<div class="textblock"><p >This Interface of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> abstract class, It is strongly recommended you use that class rather than implement this yourself unless you are very familiar with asynchronous programming <br  />
+ </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a27ba6500bb143de893deeab212418a7f" name="a27ba6500bb143de893deeab212418a7f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27ba6500bb143de893deeab212418a7f">&#9670;&nbsp;</a></span>ExecuteAsync()</h2>
@@ -146,6 +159,32 @@ Action&#160;</td><td class="memItemRight" valign="bottom"><b>OnTaskCompleted</b>
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
+<a id="a3fefa0d47a88325e7b22753396c54a73" name="a3fefa0d47a88325e7b22753396c54a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fefa0d47a88325e7b22753396c54a73">&#9670;&nbsp;</a></span>CancellationTokenSource</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CancellationTokenSource SadSapphicGames.CommandPattern.IAsyncCommand.CancellationTokenSource</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This can be used to Cancel the task after it has been started. </p>
+
+<p>Implemented in <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#a1eebc70d2124b7a46b567aa42be25f57">SadSapphicGames.CommandPattern.AsyncCommand</a>.</p>
+
+</div>
+</div>
 <a id="abbc8ae3e847b06cf970c7996a135f3e2" name="abbc8ae3e847b06cf970c7996a135f3e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abbc8ae3e847b06cf970c7996a135f3e2">&#9670;&nbsp;</a></span>CommandTask</h2>
 

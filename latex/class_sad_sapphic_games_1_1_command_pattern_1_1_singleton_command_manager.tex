@@ -19,13 +19,15 @@ void {\bfseries Toggle\+Command\+Execution} ()
 \begin{DoxyCompactList}\small\item\em Turns command execution off if its on and on if its off \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_ad5246b881b5cda083c0894b9272019d9}{Toggle\+Command\+Execution}} (bool onoff)
 \begin{DoxyCompactList}\small\item\em Turns command execution off or on \end{DoxyCompactList}\item 
-Read\+Only\+Collection$<$ \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} $>$ \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_ac08f559027453d9a7d457d2c15e3852f}{Get\+Command\+History}} ()
+Read\+Only\+Collection$<$ \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command}{ICommand}} $>$ \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a42c6d97441aa6928399e2418e2abf3cb}{Get\+Command\+History}} ()
 \begin{DoxyCompactList}\small\item\em Get the underlying \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}}\textquotesingle{}s history \end{DoxyCompactList}\item 
-Read\+Only\+Collection$<$ \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} $>$ \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a3ba109e73390f4a02332825980ff80e3}{Drop\+Command\+History}} ()
+Read\+Only\+Collection$<$ Task $>$ \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a2d26c5844d0386bd7b5caec0ca5621b1}{Get\+Running\+Command\+Tasks}} ()
+\begin{DoxyCompactList}\small\item\em Get the currently uncompleted tasks from executed Async\+Commands \end{DoxyCompactList}\item 
+Read\+Only\+Collection$<$ \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command}{ICommand}} $>$ \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a1267f874bf823ad23c5488cb8b1195f0}{Drop\+Command\+History}} ()
 \begin{DoxyCompactList}\small\item\em Empties the history of the internal \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}} and replaces it with an empty one. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a56c29b6152541525b1f505eac66dbf43}{Queue\+Command}} (\mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} command)
+void \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a28ba964daaeef8855efef5274fd47ae6}{Queue\+Command}} (\mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command}{ICommand}} command)
 \begin{DoxyCompactList}\small\item\em Queue\textquotesingle{}s a \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} into the Command\+Manager\textquotesingle{}s \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}} \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_afee54fc26d75ae6cc9c0bb4001082da5}{Queue\+Commands}} (IEnumerable$<$ \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} $>$ commands)
+void \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a92993cffd7d1df20880971274222fb5e}{Queue\+Commands}} (IEnumerable$<$ \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command}{ICommand}} $>$ commands)
 \begin{DoxyCompactList}\small\item\em Queue\textquotesingle{}s multiple commands into the Command\+Manager\textquotesingle{}s \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}} \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_ace9998062a99f6e7df251eb84b267799}{Try\+Queue\+Undo\+Command}} (\mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable}{IUndoable}} command\+To\+Undo)
 \begin{DoxyCompactList}\small\item\em Queue the undo-\/command of a \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} implementing \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable}{IUndoable}} into the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}} \end{DoxyCompactList}\item 
@@ -61,11 +63,11 @@ bool {\bfseries Queue\+Empty}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 A singleton manager for a single-\/stream, out of the box implementation of the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} pattern. For more complicated implementations create your own \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}} wrappers. Does not drop Commands from its Command\+History. Executes the next command in the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}} every frame. 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a3ba109e73390f4a02332825980ff80e3}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a3ba109e73390f4a02332825980ff80e3}} 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a1267f874bf823ad23c5488cb8b1195f0}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a1267f874bf823ad23c5488cb8b1195f0}} 
 \index{SadSapphicGames.CommandPattern.SingletonCommandManager@{SadSapphicGames.CommandPattern.SingletonCommandManager}!DropCommandHistory@{DropCommandHistory}}
 \index{DropCommandHistory@{DropCommandHistory}!SadSapphicGames.CommandPattern.SingletonCommandManager@{SadSapphicGames.CommandPattern.SingletonCommandManager}}
 \doxysubsubsection{\texorpdfstring{DropCommandHistory()}{DropCommandHistory()}}
-{\footnotesize\ttfamily Read\+Only\+Collection$<$ \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} $>$ Sad\+Sapphic\+Games.\+Command\+Pattern.\+Singleton\+Command\+Manager.\+Drop\+Command\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Read\+Only\+Collection$<$ \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command}{ICommand}} $>$ Sad\+Sapphic\+Games.\+Command\+Pattern.\+Singleton\+Command\+Manager.\+Drop\+Command\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -86,14 +88,14 @@ Forces the internal \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern
 
 
 \begin{DoxyParams}{Parameters}
-{\em command\+To\+Undo} & The \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable}{IUndoable}} commadn to undo \\
+{\em command\+To\+Undo} & The \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable}{IUndoable}} command to undo \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_ac08f559027453d9a7d457d2c15e3852f}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_ac08f559027453d9a7d457d2c15e3852f}} 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a42c6d97441aa6928399e2418e2abf3cb}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a42c6d97441aa6928399e2418e2abf3cb}} 
 \index{SadSapphicGames.CommandPattern.SingletonCommandManager@{SadSapphicGames.CommandPattern.SingletonCommandManager}!GetCommandHistory@{GetCommandHistory}}
 \index{GetCommandHistory@{GetCommandHistory}!SadSapphicGames.CommandPattern.SingletonCommandManager@{SadSapphicGames.CommandPattern.SingletonCommandManager}}
 \doxysubsubsection{\texorpdfstring{GetCommandHistory()}{GetCommandHistory()}}
-{\footnotesize\ttfamily Read\+Only\+Collection$<$ \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} $>$ Sad\+Sapphic\+Games.\+Command\+Pattern.\+Singleton\+Command\+Manager.\+Get\+Command\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Read\+Only\+Collection$<$ \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command}{ICommand}} $>$ Sad\+Sapphic\+Games.\+Command\+Pattern.\+Singleton\+Command\+Manager.\+Get\+Command\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -102,11 +104,24 @@ Get the underlying \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_
 \begin{DoxyReturn}{Returns}
 A Read\+Only\+Collection of all the commands executed by the Command\+Manager\textquotesingle{}s \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}} 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a56c29b6152541525b1f505eac66dbf43}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a56c29b6152541525b1f505eac66dbf43}} 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a2d26c5844d0386bd7b5caec0ca5621b1}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a2d26c5844d0386bd7b5caec0ca5621b1}} 
+\index{SadSapphicGames.CommandPattern.SingletonCommandManager@{SadSapphicGames.CommandPattern.SingletonCommandManager}!GetRunningCommandTasks@{GetRunningCommandTasks}}
+\index{GetRunningCommandTasks@{GetRunningCommandTasks}!SadSapphicGames.CommandPattern.SingletonCommandManager@{SadSapphicGames.CommandPattern.SingletonCommandManager}}
+\doxysubsubsection{\texorpdfstring{GetRunningCommandTasks()}{GetRunningCommandTasks()}}
+{\footnotesize\ttfamily Read\+Only\+Collection$<$ Task $>$ Sad\+Sapphic\+Games.\+Command\+Pattern.\+Singleton\+Command\+Manager.\+Get\+Running\+Command\+Tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the currently uncompleted tasks from executed Async\+Commands 
+
+\begin{DoxyReturn}{Returns}
+A Read\+Only\+Collection of uncompleted tasks from executed Async\+Commands 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a28ba964daaeef8855efef5274fd47ae6}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a28ba964daaeef8855efef5274fd47ae6}} 
 \index{SadSapphicGames.CommandPattern.SingletonCommandManager@{SadSapphicGames.CommandPattern.SingletonCommandManager}!QueueCommand@{QueueCommand}}
 \index{QueueCommand@{QueueCommand}!SadSapphicGames.CommandPattern.SingletonCommandManager@{SadSapphicGames.CommandPattern.SingletonCommandManager}}
 \doxysubsubsection{\texorpdfstring{QueueCommand()}{QueueCommand()}}
-{\footnotesize\ttfamily void Sad\+Sapphic\+Games.\+Command\+Pattern.\+Singleton\+Command\+Manager.\+Queue\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}}}]{command }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Sad\+Sapphic\+Games.\+Command\+Pattern.\+Singleton\+Command\+Manager.\+Queue\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command}{ICommand}}}]{command }\end{DoxyParamCaption})}
 
 
 
@@ -117,11 +132,11 @@ Queue\textquotesingle{}s a \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_
 {\em command} & The \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} to be Queued \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_afee54fc26d75ae6cc9c0bb4001082da5}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_afee54fc26d75ae6cc9c0bb4001082da5}} 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a92993cffd7d1df20880971274222fb5e}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager_a92993cffd7d1df20880971274222fb5e}} 
 \index{SadSapphicGames.CommandPattern.SingletonCommandManager@{SadSapphicGames.CommandPattern.SingletonCommandManager}!QueueCommands@{QueueCommands}}
 \index{QueueCommands@{QueueCommands}!SadSapphicGames.CommandPattern.SingletonCommandManager@{SadSapphicGames.CommandPattern.SingletonCommandManager}}
 \doxysubsubsection{\texorpdfstring{QueueCommands()}{QueueCommands()}}
-{\footnotesize\ttfamily void Sad\+Sapphic\+Games.\+Command\+Pattern.\+Singleton\+Command\+Manager.\+Queue\+Commands (\begin{DoxyParamCaption}\item[{IEnumerable$<$ \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}} $>$}]{commands }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Sad\+Sapphic\+Games.\+Command\+Pattern.\+Singleton\+Command\+Manager.\+Queue\+Commands (\begin{DoxyParamCaption}\item[{IEnumerable$<$ \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command}{ICommand}} $>$}]{commands }\end{DoxyParamCaption})}
 
 
 
