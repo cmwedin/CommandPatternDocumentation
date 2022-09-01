@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.3.3</span>
+   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.4.0</span>
    </div>
    <div id="projectbrief">This package contains a collection of classes and interfaces to allow for quick and consistent implementation of the command pattern across projects.</div>
   </td>
@@ -124,7 +124,7 @@ Properties</h2></td></tr>
 <tr class="memdesc:abffdeda7d6b80f3d4cfb2aee7eb627c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The task for the completion of the ExecuteAsync method after it reaches its first await and returns control back to the calling method (<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a820f8a982580afcb40ac7f053e6bca29" title="Attempts to execute the next command in the queue, returns false if it is empty or the command is IFa...">CommandStream.TryExecuteNext()</a>)  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#abffdeda7d6b80f3d4cfb2aee7eb627c9">More...</a><br /></td></tr>
 <tr class="separator:abffdeda7d6b80f3d4cfb2aee7eb627c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eebc70d2124b7a46b567aa42be25f57"><td class="memItemLeft" align="right" valign="top">CancellationTokenSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#a1eebc70d2124b7a46b567aa42be25f57">CancellationTokenSource</a><code> [get]</code></td></tr>
-<tr class="memdesc:a1eebc70d2124b7a46b567aa42be25f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">This can be used to signal to CommandTask that it should be canceled, provided that you respond to CancellationToken indicating it has been canceled from ExecuteAsync  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#a1eebc70d2124b7a46b567aa42be25f57">More...</a><br /></td></tr>
+<tr class="memdesc:a1eebc70d2124b7a46b567aa42be25f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">This can be used to signal to CommandTask that it should be canceled, null until the execute method is invoked  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#a1eebc70d2124b7a46b567aa42be25f57">More...</a><br /></td></tr>
 <tr class="separator:a1eebc70d2124b7a46b567aa42be25f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a33c5f6937809d124552c0f2071ff08"><td class="memItemLeft" align="right" valign="top"><a id="a9a33c5f6937809d124552c0f2071ff08" name="a9a33c5f6937809d124552c0f2071ff08"></a>
 CancellationToken&#160;</td><td class="memItemRight" valign="bottom"><b>CancellationToken</b><code> [get]</code></td></tr>
@@ -153,6 +153,10 @@ Action&lt; Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memdesc:a4478a8bcf207f94b287719719a5d5bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event is invoked if the command task throws an exception. <br  />
  <br /></td></tr>
 <tr class="separator:a4478a8bcf207f94b287719719a5d5bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1b3eff5c191c1be3a3e2de5c22af74"><td class="memItemLeft" align="right" valign="top"><a id="ada1b3eff5c191c1be3a3e2de5c22af74" name="ada1b3eff5c191c1be3a3e2de5c22af74"></a>
+Action&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnyTaskEnd</b></td></tr>
+<tr class="memdesc:ada1b3eff5c191c1be3a3e2de5c22af74"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event is invoked when any of the OnTask[blank] events are to avoid needed to subscribe the same delegate to multiple events when logic needs to run regardless of how the task finished <br /></td></tr>
+<tr class="separator:ada1b3eff5c191c1be3a3e2de5c22af74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header events_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command"><td colspan="2" onclick="javascript:toggleInherit('events_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command')"><img src="closed.png" alt="-"/>&#160;Events inherited from <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html">SadSapphicGames.CommandPattern.IAsyncCommand</a></td></tr>
 <tr class="memitem:a59e47b0037c7968f9538850bc856e64b inherit events_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command"><td class="memItemLeft" align="right" valign="top"><a id="a59e47b0037c7968f9538850bc856e64b" name="a59e47b0037c7968f9538850bc856e64b"></a>
 Action&#160;</td><td class="memItemRight" valign="bottom"><b>OnTaskCompleted</b></td></tr>
@@ -166,6 +170,10 @@ Action&#160;</td><td class="memItemRight" valign="bottom"><b>OnTaskCanceled</b><
 Action&lt; Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnTaskFaulted</b></td></tr>
 <tr class="memdesc:a9986cd93087b20194c24e166e820325b inherit events_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event should be invoked when CommandTask throws an exception <br /></td></tr>
 <tr class="separator:a9986cd93087b20194c24e166e820325b inherit events_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af458b434f9769fb1c1da6c596b9d97ed inherit events_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command"><td class="memItemLeft" align="right" valign="top"><a id="af458b434f9769fb1c1da6c596b9d97ed" name="af458b434f9769fb1c1da6c596b9d97ed"></a>
+Action&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnyTaskEnd</b></td></tr>
+<tr class="memdesc:af458b434f9769fb1c1da6c596b9d97ed inherit events_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event should be invoked when any of the above three are <br /></td></tr>
+<tr class="separator:af458b434f9769fb1c1da6c596b9d97ed inherit events_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The base class of all commands who's execute method involves asynchronous tasks </p>
@@ -251,7 +259,7 @@ Action&lt; Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
 </table>
 </div><div class="memdoc">
 
-<p>This can be used to signal to CommandTask that it should be canceled, provided that you respond to CancellationToken indicating it has been canceled from ExecuteAsync </p>
+<p>This can be used to signal to CommandTask that it should be canceled, null until the execute method is invoked </p>
 
 <p>Implements <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#a3fefa0d47a88325e7b22753396c54a73">SadSapphicGames.CommandPattern.IAsyncCommand</a>.</p>
 

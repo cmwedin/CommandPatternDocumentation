@@ -3,6 +3,8 @@
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
+class \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_already_running_exception}{Already\+Running\+Exception}}
+\begin{DoxyCompactList}\small\item\em This exception indicates an \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} was executed but its task had yet to complete. Only one Command\+Task per instance can be running at a time. Handled by \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream}{Command\+Stream}}. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}}
 \begin{DoxyCompactList}\small\item\em The base class of all commands who\textquotesingle{}s execute method involves asynchronous tasks \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command}{Command}}
@@ -42,6 +44,7 @@ enum \mbox{\hyperlink{namespace_sad_sapphic_games_1_1_command_pattern_a5342d0565
 , \mbox{\hyperlink{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48ba8fd133f308d5224da18e709f33daea2c}{Composite\+Failure}}
 , \newline
 \mbox{\hyperlink{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48ba776b9a2018c48cfe218049ae64f25875}{Awaiting\+Completion}}
+, \mbox{\hyperlink{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48badcf8635f774078c5b7d83e7627eff502}{Already\+Running}}
  \}
 \begin{DoxyCompactList}\small\item\em The possible return values of Command\+Stream.\+Try\+Execute\+Next() \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -76,6 +79,10 @@ Composite\+Failure&Top \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_patt
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{AwaitingCompletion@{AwaitingCompletion}!SadSapphicGames.CommandPattern@{SadSapphicGames.CommandPattern}}\index{SadSapphicGames.CommandPattern@{SadSapphicGames.CommandPattern}!AwaitingCompletion@{AwaitingCompletion}}}\mbox{\Hypertarget{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48ba776b9a2018c48cfe218049ae64f25875}\label{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48ba776b9a2018c48cfe218049ae64f25875}} 
 Awaiting\+Completion&Top command was an \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} that is awaiting completion \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AlreadyRunning@{AlreadyRunning}!SadSapphicGames.CommandPattern@{SadSapphicGames.CommandPattern}}\index{SadSapphicGames.CommandPattern@{SadSapphicGames.CommandPattern}!AlreadyRunning@{AlreadyRunning}}}\mbox{\Hypertarget{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48badcf8635f774078c5b7d83e7627eff502}\label{namespace_sad_sapphic_games_1_1_command_pattern_a5342d05658bca087178dc221b4bba48badcf8635f774078c5b7d83e7627eff502}} 
+Already\+Running&Top command was an \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} but its task had already been started and hasn\textquotesingle{}t been completed \\
 \hline
 
 \end{DoxyEnumFields}

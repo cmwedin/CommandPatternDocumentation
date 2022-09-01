@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.3.3</span>
+   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.4.0</span>
    </div>
    <div id="projectbrief">This package contains a collection of classes and interfaces to allow for quick and consistent implementation of the command pattern across projects.</div>
   </td>
@@ -76,6 +76,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_already_running_exception.html">AlreadyRunningException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This exception indicates an <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> was executed but its task had yet to complete. Only one CommandTask per instance can be running at a time. Handled by <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>.  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_already_running_exception.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html">AsyncCommand</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class of all commands who's execute method involves asynchronous tasks  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,6 +132,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48ba8fd133f308d5224da18e709f33daea2c">CompositeFailure</a>
 , <br />
 &#160;&#160;<a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48ba776b9a2018c48cfe218049ae64f25875">AwaitingCompletion</a>
+, <a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48badcf8635f774078c5b7d83e7627eff502">AlreadyRunning</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a5342d05658bca087178dc221b4bba48b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The possible return values of CommandStream.TryExecuteNext()  <a href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48b">More...</a><br /></td></tr>
@@ -158,6 +162,8 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a5342d05658bca087178dc221b4bba48ba8fd133f308d5224da18e709f33daea2c" name="a5342d05658bca087178dc221b4bba48ba8fd133f308d5224da18e709f33daea2c"></a>CompositeFailure&#160;</td><td class="fielddoc"><p >Top <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> was a <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html" title="A Command that is composed of multiple child commands, all of which are executed together and leave o...">CompositeCommand</a> that did not indicate it would fail but failed partway through execution - was reversible </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a5342d05658bca087178dc221b4bba48ba776b9a2018c48cfe218049ae64f25875" name="a5342d05658bca087178dc221b4bba48ba776b9a2018c48cfe218049ae64f25875"></a>AwaitingCompletion&#160;</td><td class="fielddoc"><p >Top command was an <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> that is awaiting completion </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5342d05658bca087178dc221b4bba48badcf8635f774078c5b7d83e7627eff502" name="a5342d05658bca087178dc221b4bba48badcf8635f774078c5b7d83e7627eff502"></a>AlreadyRunning&#160;</td><td class="fielddoc"><p >Top command was an <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> but its task had already been started and hasn't been completed </p>
 </td></tr>
 </table>
 
