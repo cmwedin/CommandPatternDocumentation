@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.4.0</span>
+   <div id="projectname">CommandPattern<span id="projectnumber">&#160;1.0.0</span>
    </div>
    <div id="projectbrief">This package contains a collection of classes and interfaces to allow for quick and consistent implementation of the command pattern across projects.</div>
   </td>
@@ -82,7 +82,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a53a6c568a512c40dbce30758cfd3a5e8"><td class="memItemLeft" align="right" valign="top">ReadOnlyCollection&lt; <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html">ICommand</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a53a6c568a512c40dbce30758cfd3a5e8">GetCommandHistory</a> ()</td></tr>
-<tr class="memdesc:a53a6c568a512c40dbce30758cfd3a5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history of executed Commands. <br  />
+<tr class="memdesc:a53a6c568a512c40dbce30758cfd3a5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history of executed Commands, a linear time operation if HistoryCount has reached HistoryDepth <br  />
   <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a53a6c568a512c40dbce30758cfd3a5e8">More...</a><br /></td></tr>
 <tr class="separator:a53a6c568a512c40dbce30758cfd3a5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a630222541f5492c2a33ba6107ef48b25"><td class="memItemLeft" align="right" valign="top">ReadOnlyCollection&lt; <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html">ICommand</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a630222541f5492c2a33ba6107ef48b25">GetCommandQueue</a> ()</td></tr>
@@ -91,11 +91,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aead312da5b6d2708c386a389ed5cf60d"><td class="memItemLeft" align="right" valign="top">ReadOnlyCollection&lt; Task &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#aead312da5b6d2708c386a389ed5cf60d">GetRunningCommandTasks</a> ()</td></tr>
 <tr class="memdesc:aead312da5b6d2708c386a389ed5cf60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Tasks being being run by AsyncCommands executed by this <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#aead312da5b6d2708c386a389ed5cf60d">More...</a><br /></td></tr>
 <tr class="separator:aead312da5b6d2708c386a389ed5cf60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae920e128f3ad7dee959e5178000717c2"><td class="memItemLeft" align="right" valign="top">CancellationTokenSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#ae920e128f3ad7dee959e5178000717c2">GetRunningTaskCTS</a> (Task task)</td></tr>
+<tr class="memdesc:ae920e128f3ad7dee959e5178000717c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the CancellationTokenSource of a running <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a>'s task  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#ae920e128f3ad7dee959e5178000717c2">More...</a><br /></td></tr>
+<tr class="separator:ae920e128f3ad7dee959e5178000717c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1eda876371afd7b031c08b05661038a"><td class="memItemLeft" align="right" valign="top"><a id="ae1eda876371afd7b031c08b05661038a" name="ae1eda876371afd7b031c08b05661038a"></a>
+CancellationTokenSource&#160;</td><td class="memItemRight" valign="bottom"><b>GetRunningTaskCTS</b> (<a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html">IAsyncCommand</a> asyncCommand)</td></tr>
+<tr class="separator:ae1eda876371afd7b031c08b05661038a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4069a12cd45683984b8932a7fcf9df7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a4069a12cd45683984b8932a7fcf9df7c">CancelRunningCommandTask</a> (Task task)</td></tr>
 <tr class="memdesc:a4069a12cd45683984b8932a7fcf9df7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels a task if that task is currently running  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a4069a12cd45683984b8932a7fcf9df7c">More...</a><br /></td></tr>
 <tr class="separator:a4069a12cd45683984b8932a7fcf9df7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3cd51db6f0be00f952bbbcbe494a5cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#ac3cd51db6f0be00f952bbbcbe494a5cf">CancelRunningCommandTask</a> (<a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html">IAsyncCommand</a> asyncCommand)</td></tr>
-<tr class="memdesc:ac3cd51db6f0be00f952bbbcbe494a5cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels the task of an <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html" title="This Interface of the AsyncCommand abstract class, It is strongly recommended you use that class rath...">IAsyncCommand</a> if that task is currently running.  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#ac3cd51db6f0be00f952bbbcbe494a5cf">More...</a><br /></td></tr>
+<tr class="memdesc:ac3cd51db6f0be00f952bbbcbe494a5cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels the task of an <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html" title="This Interface of the AsyncCommand abstract class, It is strongly recommended you use the AsyncComman...">IAsyncCommand</a> if that task is currently running.  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#ac3cd51db6f0be00f952bbbcbe494a5cf">More...</a><br /></td></tr>
 <tr class="separator:ac3cd51db6f0be00f952bbbcbe494a5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45184998448fd83464fff9a21ef05a98"><td class="memItemLeft" align="right" valign="top">ReadOnlyDictionary&lt; Task, Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a45184998448fd83464fff9a21ef05a98">GetFaultedCommandTasks</a> ()</td></tr>
 <tr class="memdesc:a45184998448fd83464fff9a21ef05a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a dictionary of any faulted tasks and the exceptions that they threw  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a45184998448fd83464fff9a21ef05a98">More...</a><br /></td></tr>
@@ -115,15 +121,35 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a73f1c471904416ebd3c122bc4759592b"><td class="memItemLeft" align="right" valign="top">ReadOnlyCollection&lt; <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html">ICommand</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a73f1c471904416ebd3c122bc4759592b">DropHistory</a> ()</td></tr>
 <tr class="memdesc:a73f1c471904416ebd3c122bc4759592b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will remove all commands from the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history and replace it with a new empty list.  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a73f1c471904416ebd3c122bc4759592b">More...</a><br /></td></tr>
 <tr class="separator:a73f1c471904416ebd3c122bc4759592b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02e41a3949caab5e379e48d1109cae1b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a02e41a3949caab5e379e48d1109cae1b">TryQueueUndoCommand</a> (<a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html">IUndoable</a> commandToUndo)</td></tr>
-<tr class="memdesc:a02e41a3949caab5e379e48d1109cae1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to queue's the undo command of a <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> object implementing <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> if that command exists in this <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a02e41a3949caab5e379e48d1109cae1b">More...</a><br /></td></tr>
-<tr class="separator:a02e41a3949caab5e379e48d1109cae1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc53e5a709a1a2f8e699e298725e65dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#adc53e5a709a1a2f8e699e298725e65dd">ForceQueueUndoCommand</a> (<a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html">IUndoable</a> commandToUndo)</td></tr>
-<tr class="memdesc:adc53e5a709a1a2f8e699e298725e65dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the stream to queue's the undo command of a <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> object implementing <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> regardless of whether the command is recorded in this <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#adc53e5a709a1a2f8e699e298725e65dd">More...</a><br /></td></tr>
-<tr class="separator:adc53e5a709a1a2f8e699e298725e65dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f0ba681e60b2c6c89cad78f80422b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a53f0ba681e60b2c6c89cad78f80422b3">TryQueueUndoCommand</a> (<a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html">IUndoable</a> undoable)</td></tr>
+<tr class="memdesc:a53f0ba681e60b2c6c89cad78f80422b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to queue's the undo command of a <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> object implementing <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> if that command exists in this <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a53f0ba681e60b2c6c89cad78f80422b3">More...</a><br /></td></tr>
+<tr class="separator:a53f0ba681e60b2c6c89cad78f80422b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bdbd4789a76decc355848d8ca0ff177"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a3bdbd4789a76decc355848d8ca0ff177">ForceQueueUndoCommand</a> (<a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html">IUndoable</a> undoable)</td></tr>
+<tr class="memdesc:a3bdbd4789a76decc355848d8ca0ff177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the stream to queue's the undo command of a <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> object implementing <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> regardless of whether the command is recorded in this <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a3bdbd4789a76decc355848d8ca0ff177">More...</a><br /></td></tr>
+<tr class="separator:a3bdbd4789a76decc355848d8ca0ff177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e1414bdcedb8491374689427f182b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a03e1414bdcedb8491374689427f182b4">TryPeekNext</a> (out <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html">ICommand</a> nextCommand)</td></tr>
+<tr class="memdesc:a03e1414bdcedb8491374689427f182b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Examine the next command in the commandQueue with out executing it  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a03e1414bdcedb8491374689427f182b4">More...</a><br /></td></tr>
+<tr class="separator:a03e1414bdcedb8491374689427f182b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ef2c579d0aba6c8e00e5bd666d0d3f9"><td class="memItemLeft" align="right" valign="top"><a id="a5ef2c579d0aba6c8e00e5bd666d0d3f9" name="a5ef2c579d0aba6c8e00e5bd666d0d3f9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RequeueNextCommand</b> ()</td></tr>
+<tr class="memdesc:a5ef2c579d0aba6c8e00e5bd666d0d3f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the next command in the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s queue, if it has one, and adds it back to the end of the queue. <br /></td></tr>
+<tr class="separator:a5ef2c579d0aba6c8e00e5bd666d0d3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3b6e06f6e6b3eabb5bf7a560ff2a59"><td class="memItemLeft" align="right" valign="top"><a id="a5c3b6e06f6e6b3eabb5bf7a560ff2a59" name="a5c3b6e06f6e6b3eabb5bf7a560ff2a59"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SkipNextCommand</b> ()</td></tr>
+<tr class="memdesc:a5c3b6e06f6e6b3eabb5bf7a560ff2a59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the next command from the queue without executing it <br /></td></tr>
+<tr class="separator:a5c3b6e06f6e6b3eabb5bf7a560ff2a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a771235b465e619252c1046a78a57d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48b">ExecuteCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a8a771235b465e619252c1046a78a57d4">TryExecuteNext</a> (out <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html">ICommand</a> topCommand)</td></tr>
 <tr class="memdesc:a8a771235b465e619252c1046a78a57d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to execute the next command in the queue, returns an enum indicating if it was able to or not or if the queue was empty or the command is async and awaiting completion.  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a8a771235b465e619252c1046a78a57d4">More...</a><br /></td></tr>
 <tr class="separator:a8a771235b465e619252c1046a78a57d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99550599ccefc798b9a0935a1605f74c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48b">ExecuteCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a99550599ccefc798b9a0935a1605f74c">TryExecuteImmediate</a> (<a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html">ICommand</a> command)</td></tr>
+<tr class="memdesc:a99550599ccefc798b9a0935a1605f74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bypass the command queue and immediately attempt to execute a command  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a99550599ccefc798b9a0935a1605f74c">More...</a><br /></td></tr>
+<tr class="separator:a99550599ccefc798b9a0935a1605f74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5482f92fba4c25f661f32bdd214b4623"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48b">ExecuteCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a5482f92fba4c25f661f32bdd214b4623">TryUndoImmediate</a> (<a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html">IUndoable</a> undoable)</td></tr>
+<tr class="memdesc:a5482f92fba4c25f661f32bdd214b4623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bypass the command queue and immediately attempt to execute an <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a>'s undo command if the <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> is in the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a5482f92fba4c25f661f32bdd214b4623">More...</a><br /></td></tr>
+<tr class="separator:a5482f92fba4c25f661f32bdd214b4623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad158afb9f1257849a15d5fc7eb081f65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48b">ExecuteCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#ad158afb9f1257849a15d5fc7eb081f65">ForceTryUndoImmediate</a> (<a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html">IUndoable</a> undoable)</td></tr>
+<tr class="memdesc:ad158afb9f1257849a15d5fc7eb081f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bypass the command queue and immediately attempt to execute an <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a>'s undo command, regardless of wether the <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> is in the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#ad158afb9f1257849a15d5fc7eb081f65">More...</a><br /></td></tr>
+<tr class="separator:ad158afb9f1257849a15d5fc7eb081f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a820f8a982580afcb40ac7f053e6bca29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48b">ExecuteCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a820f8a982580afcb40ac7f053e6bca29">TryExecuteNext</a> ()</td></tr>
 <tr class="memdesc:a820f8a982580afcb40ac7f053e6bca29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to execute the next command in the queue, returns false if it is empty or the command is <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_failable.html" title="Interface implemented by commands that could fail to execute. Commands that would fail do not have th...">IFailable</a> and would fail.  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a820f8a982580afcb40ac7f053e6bca29">More...</a><br /></td></tr>
 <tr class="separator:a820f8a982580afcb40ac7f053e6bca29"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,7 +184,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>QueueCount</b><code> [
 Events</h2></td></tr>
 <tr class="memitem:a90c682c1d47da330e6c3bae7ea18b092"><td class="memItemLeft" align="right" valign="top"><a id="a90c682c1d47da330e6c3bae7ea18b092" name="a90c682c1d47da330e6c3bae7ea18b092"></a>
 Action&lt; Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnTaskFaulted</b></td></tr>
-<tr class="memdesc:a90c682c1d47da330e6c3bae7ea18b092"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event will be invoked if one of the tasks from an <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html" title="This Interface of the AsyncCommand abstract class, It is strongly recommended you use that class rath...">IAsyncCommand</a> executed by this stream faults. Can be used to throw any exception's caused by tasks rather than storing them on the task object <br /></td></tr>
+<tr class="memdesc:a90c682c1d47da330e6c3bae7ea18b092"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event will be invoked if one of the tasks from an <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html" title="This Interface of the AsyncCommand abstract class, It is strongly recommended you use the AsyncComman...">IAsyncCommand</a> executed by this stream faults. Can be used to throw any exception's caused by tasks rather than storing them on the task object <br /></td></tr>
 <tr class="separator:a90c682c1d47da330e6c3bae7ea18b092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -207,10 +233,10 @@ Action&lt; Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
       </table>
 </div><div class="memdoc">
 
-<p>Cancels the task of an <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html" title="This Interface of the AsyncCommand abstract class, It is strongly recommended you use that class rath...">IAsyncCommand</a> if that task is currently running. </p>
+<p>Cancels the task of an <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html" title="This Interface of the AsyncCommand abstract class, It is strongly recommended you use the AsyncComman...">IAsyncCommand</a> if that task is currently running. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">asyncCommand</td><td>The <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html" title="This Interface of the AsyncCommand abstract class, It is strongly recommended you use that class rath...">IAsyncCommand</a> to cancel the task off</td></tr>
+    <tr><td class="paramname">asyncCommand</td><td>The <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html" title="This Interface of the AsyncCommand abstract class, It is strongly recommended you use the AsyncComman...">IAsyncCommand</a> to cancel the task off</td></tr>
   </table>
   </dd>
 </dl>
@@ -309,8 +335,8 @@ Action&lt; Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
 
 </div>
 </div>
-<a id="adc53e5a709a1a2f8e699e298725e65dd" name="adc53e5a709a1a2f8e699e298725e65dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc53e5a709a1a2f8e699e298725e65dd">&#9670;&nbsp;</a></span>ForceQueueUndoCommand()</h2>
+<a id="a3bdbd4789a76decc355848d8ca0ff177" name="a3bdbd4789a76decc355848d8ca0ff177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bdbd4789a76decc355848d8ca0ff177">&#9670;&nbsp;</a></span>ForceQueueUndoCommand()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -319,7 +345,7 @@ Action&lt; Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
           <td class="memname">void SadSapphicGames.CommandPattern.CommandStream.ForceQueueUndoCommand </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html">IUndoable</a>&#160;</td>
-          <td class="paramname"><em>commandToUndo</em></td><td>)</td>
+          <td class="paramname"><em>undoable</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -328,10 +354,37 @@ Action&lt; Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
 <p>Force the stream to queue's the undo command of a <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> object implementing <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> regardless of whether the command is recorded in this <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history </p>
 <p >&lt;remark&gt;This is equivalent to passing the result of <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html#aee034fd01b2437ef40238694456744d9" title="Creates a command to revert the changes of the implementing command">IUndoable.GetUndoCommand()</a> into CommandStream.QueueCommand(Command command) directly&lt;/remark&gt; </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">commandToUndo</td><td>The <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> to queue the undo-Command of</td></tr>
+    <tr><td class="paramname">undoable</td><td>The <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> to queue the undo-Command of</td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ad158afb9f1257849a15d5fc7eb081f65" name="ad158afb9f1257849a15d5fc7eb081f65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad158afb9f1257849a15d5fc7eb081f65">&#9670;&nbsp;</a></span>ForceTryUndoImmediate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48b">ExecuteCode</a> SadSapphicGames.CommandPattern.CommandStream.ForceTryUndoImmediate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html">IUndoable</a>&#160;</td>
+          <td class="paramname"><em>undoable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bypass the command queue and immediately attempt to execute an <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a>'s undo command, regardless of wether the <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> is in the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">undoable</td><td>the <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> to execute the undo command of</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The ExecuteCode of the attempt to execute the undo command of the <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a></dd></dl>
 
 </div>
 </div>
@@ -350,7 +403,7 @@ Action&lt; Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
       </table>
 </div><div class="memdoc">
 
-<p>Get the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history of executed Commands. <br  />
+<p>Get the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history of executed Commands, a linear time operation if HistoryCount has reached HistoryDepth <br  />
  </p>
 <dl class="section return"><dt>Returns</dt><dd>The history of executed commands, null if history is not recorded. </dd></dl>
 
@@ -416,6 +469,33 @@ Action&lt; Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
 
 </div>
 </div>
+<a id="ae920e128f3ad7dee959e5178000717c2" name="ae920e128f3ad7dee959e5178000717c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae920e128f3ad7dee959e5178000717c2">&#9670;&nbsp;</a></span>GetRunningTaskCTS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CancellationTokenSource SadSapphicGames.CommandPattern.CommandStream.GetRunningTaskCTS </td>
+          <td>(</td>
+          <td class="paramtype">Task&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the CancellationTokenSource of a running <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a>'s task </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">task</td><td>The task to get the CTS of</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The CTS of task if it is running, null if it is not</dd></dl>
+
+</div>
+</div>
 <a id="ac56d31a0cf8a6e36edc944c3bbb5dbf8" name="ac56d31a0cf8a6e36edc944c3bbb5dbf8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac56d31a0cf8a6e36edc944c3bbb5dbf8">&#9670;&nbsp;</a></span>QueueCommand()</h2>
 
@@ -468,6 +548,33 @@ Action&lt; Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
 
 </div>
 </div>
+<a id="a99550599ccefc798b9a0935a1605f74c" name="a99550599ccefc798b9a0935a1605f74c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99550599ccefc798b9a0935a1605f74c">&#9670;&nbsp;</a></span>TryExecuteImmediate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48b">ExecuteCode</a> SadSapphicGames.CommandPattern.CommandStream.TryExecuteImmediate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html">ICommand</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bypass the command queue and immediately attempt to execute a command </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>The command to immediately be executed</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The ExecuteCode for the attempt to execute the command</dd></dl>
+
+</div>
+</div>
 <a id="a820f8a982580afcb40ac7f053e6bca29" name="a820f8a982580afcb40ac7f053e6bca29"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a820f8a982580afcb40ac7f053e6bca29">&#9670;&nbsp;</a></span>TryExecuteNext() <span class="overload">[1/2]</span></h2>
 
@@ -515,8 +622,35 @@ Action&lt; Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
 
 </div>
 </div>
-<a id="a02e41a3949caab5e379e48d1109cae1b" name="a02e41a3949caab5e379e48d1109cae1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02e41a3949caab5e379e48d1109cae1b">&#9670;&nbsp;</a></span>TryQueueUndoCommand()</h2>
+<a id="a03e1414bdcedb8491374689427f182b4" name="a03e1414bdcedb8491374689427f182b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e1414bdcedb8491374689427f182b4">&#9670;&nbsp;</a></span>TryPeekNext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SadSapphicGames.CommandPattern.CommandStream.TryPeekNext </td>
+          <td>(</td>
+          <td class="paramtype">out <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html">ICommand</a>&#160;</td>
+          <td class="paramname"><em>nextCommand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Examine the next command in the commandQueue with out executing it </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nextCommand</td><td>The next command in the queue, null if empty</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Wether there was a command in queue or not</dd></dl>
+
+</div>
+</div>
+<a id="a53f0ba681e60b2c6c89cad78f80422b3" name="a53f0ba681e60b2c6c89cad78f80422b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53f0ba681e60b2c6c89cad78f80422b3">&#9670;&nbsp;</a></span>TryQueueUndoCommand()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -525,7 +659,7 @@ Action&lt; Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
           <td class="memname">bool SadSapphicGames.CommandPattern.CommandStream.TryQueueUndoCommand </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html">IUndoable</a>&#160;</td>
-          <td class="paramname"><em>commandToUndo</em></td><td>)</td>
+          <td class="paramname"><em>undoable</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -534,11 +668,38 @@ Action&lt; Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
 <p>Attempt to queue's the undo command of a <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> object implementing <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> if that command exists in this <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">commandToUndo</td><td>The <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> to try and queue the undo-Command of</td></tr>
+    <tr><td class="paramname">undoable</td><td>The <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands">Command</a> to try and queue the undo-Command of</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Wether the undo command was queued</dd></dl>
+
+</div>
+</div>
+<a id="a5482f92fba4c25f661f32bdd214b4623" name="a5482f92fba4c25f661f32bdd214b4623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5482f92fba4c25f661f32bdd214b4623">&#9670;&nbsp;</a></span>TryUndoImmediate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_sad_sapphic_games_1_1_command_pattern.html#a5342d05658bca087178dc221b4bba48b">ExecuteCode</a> SadSapphicGames.CommandPattern.CommandStream.TryUndoImmediate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html">IUndoable</a>&#160;</td>
+          <td class="paramname"><em>undoable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bypass the command queue and immediately attempt to execute an <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a>'s undo command if the <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> is in the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">undoable</td><td>the <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> to execute the undo command of</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The ExecuteCode of the attempt to execute the undo command of the <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a>, Execute.Failure if the <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html" title="Indicates a command can be undone">IUndoable</a> was not in the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>'s history </dd></dl>
 
 </div>
 </div>

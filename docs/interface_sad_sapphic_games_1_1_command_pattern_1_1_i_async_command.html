@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.4.0</span>
+   <div id="projectname">CommandPattern<span id="projectnumber">&#160;1.0.0</span>
    </div>
    <div id="projectbrief">This package contains a collection of classes and interfaces to allow for quick and consistent implementation of the command pattern across projects.</div>
   </td>
@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>This Interface of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> abstract class, It is strongly recommended you use that class rather than implement this yourself unless you are very familiar with asynchronous programming <br  />
+<p>This Interface of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> abstract class, It is strongly recommended you use the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> class rather than implement this yourself unless you are very familiar with asynchronous programming <br  />
   
  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#details">More...</a></p>
 <div class="dynheader">
@@ -105,9 +105,9 @@ Properties</h2></td></tr>
 <tr class="memitem:abbc8ae3e847b06cf970c7996a135f3e2"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#abbc8ae3e847b06cf970c7996a135f3e2">CommandTask</a><code> [get]</code></td></tr>
 <tr class="memdesc:abbc8ae3e847b06cf970c7996a135f3e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should get the asynchronous task returned by ExecuteAsync after it reaches its first await  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#abbc8ae3e847b06cf970c7996a135f3e2">More...</a><br /></td></tr>
 <tr class="separator:abbc8ae3e847b06cf970c7996a135f3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fefa0d47a88325e7b22753396c54a73"><td class="memItemLeft" align="right" valign="top">CancellationTokenSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#a3fefa0d47a88325e7b22753396c54a73">CancellationTokenSource</a><code> [get]</code></td></tr>
-<tr class="memdesc:a3fefa0d47a88325e7b22753396c54a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">This can be used to Cancel the task after it has been started.  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#a3fefa0d47a88325e7b22753396c54a73">More...</a><br /></td></tr>
-<tr class="separator:a3fefa0d47a88325e7b22753396c54a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2275c240e2ad2472f4d5ad1dc80c690d"><td class="memItemLeft" align="right" valign="top">CancellationToken&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#a2275c240e2ad2472f4d5ad1dc80c690d">CancellationToken</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a2275c240e2ad2472f4d5ad1dc80c690d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This can be used to Cancel the task after it has been started.  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#a2275c240e2ad2472f4d5ad1dc80c690d">More...</a><br /></td></tr>
+<tr class="separator:a2275c240e2ad2472f4d5ad1dc80c690d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="events" name="events"></a>
 Events</h2></td></tr>
@@ -129,7 +129,7 @@ Action&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnyTaskEnd</b></t
 <tr class="separator:af458b434f9769fb1c1da6c596b9d97ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >This Interface of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> abstract class, It is strongly recommended you use that class rather than implement this yourself unless you are very familiar with asynchronous programming <br  />
+<div class="textblock"><p >This Interface of the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> abstract class, It is strongly recommended you use the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a> class rather than implement this yourself unless you are very familiar with asynchronous programming <br  />
  </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a27ba6500bb143de893deeab212418a7f" name="a27ba6500bb143de893deeab212418a7f"></a>
@@ -163,8 +163,8 @@ Action&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnyTaskEnd</b></t
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
-<a id="a3fefa0d47a88325e7b22753396c54a73" name="a3fefa0d47a88325e7b22753396c54a73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fefa0d47a88325e7b22753396c54a73">&#9670;&nbsp;</a></span>CancellationTokenSource</h2>
+<a id="a2275c240e2ad2472f4d5ad1dc80c690d" name="a2275c240e2ad2472f4d5ad1dc80c690d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2275c240e2ad2472f4d5ad1dc80c690d">&#9670;&nbsp;</a></span>CancellationToken</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,19 +173,19 @@ Action&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnyTaskEnd</b></t
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">CancellationTokenSource SadSapphicGames.CommandPattern.IAsyncCommand.CancellationTokenSource</td>
+          <td class="memname">CancellationToken SadSapphicGames.CommandPattern.IAsyncCommand.CancellationToken</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>This can be used to Cancel the task after it has been started. </p>
 
-<p>Implemented in <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#a1eebc70d2124b7a46b567aa42be25f57">SadSapphicGames.CommandPattern.AsyncCommand</a>.</p>
+<p>Implemented in <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#a9a33c5f6937809d124552c0f2071ff08">SadSapphicGames.CommandPattern.AsyncCommand</a>.</p>
 
 </div>
 </div>

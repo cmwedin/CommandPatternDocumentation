@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  31 AUG 2022 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  9 SEP 2022 13:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -926,15 +926,15 @@ Chapter 2.
 ]
 Chapter 3.
 (./annotated.tex
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 3
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 4
 .
  (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 3.
+(Font)              scaled to size 8.99994pt on input line 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--8
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
  []  
  []
 
@@ -950,16 +950,16 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 7.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 7.
-LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
-(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 7.
-LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 7.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 13.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 7.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 13.
+(Font)              scaled to size 6.29996pt on input line 7.
+LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 9.
+LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 9.
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
@@ -967,9 +967,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
 ]) [8]
 Chapter 5.
-(./class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.tex <./class_s
-ad_sapphic_games_1_1_command_pattern_1_1_async_command.pdf>
-<class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.pdf, id=711, 501
+
+(./class_sad_sapphic_games_1_1_command_pattern_1_1_already_running_exception.te
+x <./class_sad_sapphic_games_1_1_command_pattern_1_1_already_running_exception.
+pdf>
+<class_sad_sapphic_games_1_1_command_pattern_1_1_already_running_exception.pdf,
+ id=773, 501.875pt x 107.07pt>
+File: class_sad_sapphic_games_1_1_command_pattern_1_1_already_running_exception
+.pdf Graphic file (type pdf)
+<use class_sad_sapphic_games_1_1_command_pattern_1_1_already_running_exception.
+pdf>
+Package pdftex.def Info: class_sad_sapphic_games_1_1_command_pattern_1_1_alread
+y_running_exception.pdf  used on input line 11.
+(pdftex.def)             Requested size: 266.74295pt x 56.9055pt.
+
+Underfull \hbox (badness 7851) in paragraph at lines 29--31
+[][] \T1/phv/b/n/10 Already[]Running[]Exception \T1/phv/m/n/10 (System.[]Runtim
+e.[]Serialization.[]Serialization[]Info info, System.[]Runtime.[]
+ []
+
+) (./class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.tex <./class
+_sad_sapphic_games_1_1_command_pattern_1_1_async_command.pdf>
+<class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.pdf, id=781, 501
 .875pt x 93.2283pt>
 File: class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.pdf Graphic
  file (type pdf)
@@ -980,24 +999,18 @@ command.pdf  used on input line 11.
  [9
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
-
+[10]
 Underfull \hbox (badness 10000) detected at line 82
 [][][]
  []
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
-\T1/pcr/m/n/8 Cancellation[]Token[]Source Sad[]Sapphic[]Games.[]Command[]Patter
-n.[]Async[]Command.[]Cancellation[]Token[]Source
- []
-
-) (./class_sad_sapphic_games_1_1_command_pattern_1_1_command.tex <./class_sad_s
-apphic_games_1_1_command_pattern_1_1_command.pdf>
-<class_sad_sapphic_games_1_1_command_pattern_1_1_command.pdf, id=752, 501.875pt
+) (./class_sad_sapphic_games_1_1_command_pattern_1_1_command.tex [11] <./class_
+sad_sapphic_games_1_1_command_pattern_1_1_command.pdf>
+<class_sad_sapphic_games_1_1_command_pattern_1_1_command.pdf, id=837, 501.875pt
  x 73.53473pt>
 File: class_sad_sapphic_games_1_1_command_pattern_1_1_command.pdf Graphic file 
 (type pdf)
@@ -1005,123 +1018,145 @@ File: class_sad_sapphic_games_1_1_command_pattern_1_1_command.pdf Graphic file
 Package pdftex.def Info: class_sad_sapphic_games_1_1_command_pattern_1_1_comman
 d.pdf  used on input line 11.
 (pdftex.def)             Requested size: 398.3531pt x 58.3647pt.
- [11]
+
 Overfull \hbox (70.73547pt too wide) in paragraph at lines 41--42
 []\T1/phv/m/n/10 Implemented in [], [],
  []
 
 ) (./class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.tex
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-[12] [13]
+[13]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 78.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 97.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 78.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.19995pt on input line 95.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 97.
  [14]
-Underfull \hbox (badness 10000) detected at line 132
-[][][]
- []
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 7.19995pt on input line 114.
 
-
-Underfull \hbox (badness 10000) detected at line 145
+Underfull \hbox (badness 10000) detected at line 151
 [][][]
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) detected at line 164
+[][][]
+ []
+
+[16]
+Underfull \hbox (badness 10000) detected at line 212
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
 \T1/pcr/m/n/8 Read[]Only[]Collection$\OML/cmm/m/it/8 <$ [] $>$ \T1/pcr/m/n/8 Sa
 d[]Sapphic[]Games.[]Command[]Pattern.[]Command[]Stream.[]Get[]Command[]History
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 189
+Underfull \hbox (badness 10000) detected at line 226
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 \T1/pcr/m/n/8 Read[]Only[]Collection$\OML/cmm/m/it/8 <$ [] $>$ \T1/pcr/m/n/8 Sa
 d[]Sapphic[]Games.[]Command[]Pattern.[]Command[]Stream.[]Get[]Command[]Queue (
  []
 
 
-Underfull \hbox (badness 10000) detected at line 202
-[][][]
- []
-
-[16]
-Underfull \hbox (badness 10000) detected at line 215
+Underfull \hbox (badness 10000) detected at line 239
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+Underfull \hbox (badness 10000) detected at line 252
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 \T1/pcr/m/n/8 Read[]Only[]Collection$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Task $\OM
 L/cmm/m/it/8 >$ \T1/pcr/m/n/8 Sad[]Sapphic[]Games.[]Command[]Pattern.[]Command[
 ]Stream.[]Get[]Running[]Command[]Tasks
  []
 
-
-Underfull \hbox (badness 10000) detected at line 228
-[][][]
- []
-
-
-Overfull \vbox (6.94162pt too high) has occurred while \output is active []
-
-
 [17]
-Underfull \hbox (badness 10000) detected at line 271
+Underfull \hbox (badness 10000) detected at line 265
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 289
+Underfull \hbox (badness 10000) detected at line 283
+[][][]
+ []
+
+[18]
+Underfull \hbox (badness 10000) detected at line 331
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 307
+Underfull \hbox (badness 10000) detected at line 344
 [][][]
  []
 
-[18]) (./class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.tex 
-<./class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.pdf>
-<class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.pdf, id=941,
- 501.875pt x 110.3021pt>
+[19]
+Underfull \hbox (badness 10000) detected at line 362
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 380
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 398
+[][][]
+ []
+
+[20]
+Underfull \hbox (badness 10000) detected at line 416
+[][][]
+ []
+
+) (./class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.tex <./c
+lass_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.pdf>
+<class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.pdf, id=1089
+, 501.875pt x 110.3021pt>
 File: class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.pdf Gra
 phic file (type pdf)
 <use class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.pdf>
 Package pdftex.def Info: class_sad_sapphic_games_1_1_command_pattern_1_1_compos
 ite_command.pdf  used on input line 11.
 (pdftex.def)             Requested size: 398.3531pt x 87.54683pt.
-
-[19]
+ [21]
 Underfull \hbox (badness 870) in paragraph at lines 70--71
 []\T1/phv/m/n/10 Be aware that if you over-ride this method you will by-pass th
 e im-ple-mented fail-safe\TS1/phv/m/n/10 '\T1/phv/m/n/10 s for chil-dren of the
 
  []
 
-) (./interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.tex
+[22])
+(./interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-[20] <./interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.pdf
->
-<interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.pdf, id=10
-00, 501.875pt x 186.45659pt>
+ <./interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.pdf>
+<interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.pdf, id=11
+48, 501.875pt x 186.45659pt>
 File: interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.pdf G
 raphic file (type pdf)
 <use interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.pdf>
@@ -1129,24 +1164,18 @@ Package pdftex.def Info: interface_sad_sapphic_games_1_1_command_pattern_1_1_i_
 async_command.pdf  used on input line 12.
 (pdftex.def)             Requested size: 229.75488pt x 85.35826pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
-[21]
-Underfull \hbox (badness 10000) detected at line 56
+[23]
+Underfull \hbox (badness 10000) detected at line 59
 [][][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-\T1/pcr/m/n/8 Cancellation[]Token[]Source Sad[]Sapphic[]Games.[]Command[]Patter
-n.[]IAsync[]Command.[]Cancellation[]Token[]Source
  []
 
 ) (./interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.tex <./inter
 face_sad_sapphic_games_1_1_command_pattern_1_1_i_command.pdf>
-<interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.pdf, id=1027, 50
+<interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.pdf, id=1177, 50
 1.875pt x 55.15607pt>
 File: interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.pdf Graphic
  file (type pdf)
@@ -1154,7 +1183,7 @@ File: interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.pdf Graphic
 Package pdftex.def Info: interface_sad_sapphic_games_1_1_command_pattern_1_1_i_
 command.pdf  used on input line 11.
 (pdftex.def)             Requested size: 398.32246pt x 43.77364pt.
- [22]
+ [24]
 Overfull \hbox (27.7252pt too wide) in paragraph at lines 37--38
 []\T1/phv/m/n/10 Implemented in [], [],
  []
@@ -1165,7 +1194,7 @@ Overfull \hbox (15.80942pt too wide) in paragraph at lines 37--38
  []
 
 ) (./interface_sad_sapphic_games_1_1_command_pattern_1_1_i_failable.tex
-[23]
+[25]
 Underfull \hbox (badness 10000) detected at line 29
 [][][]
  []
@@ -1175,7 +1204,7 @@ Underfull \hbox (badness 10000) detected at line 29
 re_exception.tex <./class_sad_sapphic_games_1_1_command_pattern_1_1_irreversibl
 e_composite_failure_exception.pdf>
 <class_sad_sapphic_games_1_1_command_pattern_1_1_irreversible_composite_failure
-_exception.pdf, id=1054, 501.875pt x 89.82559pt>
+_exception.pdf, id=1205, 501.875pt x 89.82559pt>
 File: class_sad_sapphic_games_1_1_command_pattern_1_1_irreversible_composite_fa
 ilure_exception.pdf Graphic file (type pdf)
 <use class_sad_sapphic_games_1_1_command_pattern_1_1_irreversible_composite_fai
@@ -1189,9 +1218,9 @@ Overfull \hbox (28.3936pt too wide) in paragraph at lines 17--19
 ([] [], List$\OML/cmm/m/it/10 <$ [] $>$ []\T1/phv/m/n/10 ) 
  []
 
-[24]) (./interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.tex <./
+[26]) (./interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.tex <./
 interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.pdf>
-<interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.pdf, id=1077, 5
+<interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.pdf, id=1228, 5
 01.875pt x 55.15607pt>
 File: interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.pdf Graphi
 c file (type pdf)
@@ -1209,9 +1238,9 @@ Overfull \hbox (94.14395pt too wide) in paragraph at lines 40--41
 []\T1/phv/m/n/10 Implemented in [], and []. 
  []
 
-) (./class_sad_sapphic_games_1_1_command_pattern_1_1_null_command.tex [25] <./c
+) (./class_sad_sapphic_games_1_1_command_pattern_1_1_null_command.tex [27] <./c
 lass_sad_sapphic_games_1_1_command_pattern_1_1_null_command.pdf>
-<class_sad_sapphic_games_1_1_command_pattern_1_1_null_command.pdf, id=1096, 501
+<class_sad_sapphic_games_1_1_command_pattern_1_1_null_command.pdf, id=1246, 501
 .875pt x 98.40765pt>
 File: class_sad_sapphic_games_1_1_command_pattern_1_1_null_command.pdf Graphic 
 file (type pdf)
@@ -1219,7 +1248,7 @@ file (type pdf)
 Package pdftex.def Info: class_sad_sapphic_games_1_1_command_pattern_1_1_null_c
 ommand.pdf  used on input line 11.
 (pdftex.def)             Requested size: 398.33778pt x 78.10571pt.
- [26]
+ [28]
 Underfull \hbox (badness 10000) detected at line 51
 [][][]
  []
@@ -1227,7 +1256,7 @@ Underfull \hbox (badness 10000) detected at line 51
 ) (./class_sad_sapphic_games_1_1_command_pattern_1_1_null_composite_command.tex
  <./class_sad_sapphic_games_1_1_command_pattern_1_1_null_composite_command.pdf>
 <class_sad_sapphic_games_1_1_command_pattern_1_1_null_composite_command.pdf, id
-=1117, 501.875pt x 110.3021pt>
+=1267, 501.875pt x 110.3021pt>
 File: class_sad_sapphic_games_1_1_command_pattern_1_1_null_composite_command.pd
 f Graphic file (type pdf)
 <use class_sad_sapphic_games_1_1_command_pattern_1_1_null_composite_command.pdf
@@ -1235,7 +1264,7 @@ f Graphic file (type pdf)
 Package pdftex.def Info: class_sad_sapphic_games_1_1_command_pattern_1_1_null_c
 omposite_command.pdf  used on input line 11.
 (pdftex.def)             Requested size: 398.3531pt x 87.54683pt.
-[27]
+[29]
 Underfull \hbox (badness 10000) detected at line 56
 [][][]
  []
@@ -1245,7 +1274,7 @@ Underfull \hbox (badness 10000) detected at line 56
 _exception.tex <./class_sad_sapphic_games_1_1_command_pattern_1_1_reversible_co
 mposite_failure_exception.pdf>
 <class_sad_sapphic_games_1_1_command_pattern_1_1_reversible_composite_failure_e
-xception.pdf, id=1142, 501.875pt x 90.83937pt>
+xception.pdf, id=1293, 501.875pt x 90.83937pt>
 File: class_sad_sapphic_games_1_1_command_pattern_1_1_reversible_composite_fail
 ure_exception.pdf Graphic file (type pdf)
 <use class_sad_sapphic_games_1_1_command_pattern_1_1_reversible_composite_failu
@@ -1253,10 +1282,10 @@ re_exception.pdf>
 Package pdftex.def Info: class_sad_sapphic_games_1_1_command_pattern_1_1_revers
 ible_composite_failure_exception.pdf  used on input line 11.
 (pdftex.def)             Requested size: 314.3986pt x 56.9055pt.
- [28])
+ [30])
 (./class_sad_sapphic_games_1_1_command_pattern_1_1_simple_composite.tex <./clas
 s_sad_sapphic_games_1_1_command_pattern_1_1_simple_composite.pdf>
-<class_sad_sapphic_games_1_1_command_pattern_1_1_simple_composite.pdf, id=1160,
+<class_sad_sapphic_games_1_1_command_pattern_1_1_simple_composite.pdf, id=1310,
  501.875pt x 234.7972pt>
 File: class_sad_sapphic_games_1_1_command_pattern_1_1_simple_composite.pdf Grap
 hic file (type pdf)
@@ -1264,12 +1293,12 @@ hic file (type pdf)
 Package pdftex.def Info: class_sad_sapphic_games_1_1_command_pattern_1_1_simple
 _composite.pdf  used on input line 11.
 (pdftex.def)             Requested size: 243.27122pt x 113.81102pt.
- [29])
+ [31])
 (./class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.te
 x <./class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.
 pdf>
 <class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.pdf,
- id=1191, 501.875pt x 103.7476pt>
+ id=1342, 501.875pt x 103.7476pt>
 File: class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager
 .pdf Graphic file (type pdf)
 <use class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.
@@ -1277,283 +1306,324 @@ pdf>
 Package pdftex.def Info: class_sad_sapphic_games_1_1_command_pattern_1_1_single
 ton_command_manager.pdf  used on input line 11.
 (pdftex.def)             Requested size: 275.27396pt x 56.9055pt.
- [30] [31]
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+ [32] [33]
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 \T1/pcr/m/n/8 Read[]Only[]Collection$\OML/cmm/m/it/8 <$ [] $>$ \T1/pcr/m/n/8 Sa
 d[]Sapphic[]Games.[]Command[]Pattern.[]Singleton[]Command[]Manager.[]Drop[]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 76
+Underfull \hbox (badness 10000) detected at line 110
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 \T1/pcr/m/n/8 Read[]Only[]Collection$\OML/cmm/m/it/8 <$ [] $>$ \T1/pcr/m/n/8 Sa
 d[]Sapphic[]Games.[]Command[]Pattern.[]Singleton[]Command[]Manager.[]Get[]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 104
+Underfull \hbox (badness 10000) detected at line 138
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 \T1/pcr/m/n/8 Read[]Only[]Collection$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Task $\OM
 L/cmm/m/it/8 >$ \T1/pcr/m/n/8 Sad[]Sapphic[]Games.[]Command[]Pattern.[]Singleto
 n[]Command[]Manager.[]Get[]Running[]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 117
+Underfull \hbox (badness 10000) detected at line 151
 [][][]
  []
 
-[32] [33]
-Underfull \hbox (badness 10000) detected at line 180
+
+Overfull \vbox (7.3005pt too high) has occurred while \output is active []
+
+
+[35]
+Underfull \hbox (badness 10000) detected at line 214
 [][][]
  []
 
-) [34] (./refman.ind
+) [36] (./refman.ind
 Overfull \hbox (37.18774pt too wide) in paragraph at lines 4--6
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CompositeCommand,
  []
 
 
-Overfull \hbox (18.68417pt too wide) in paragraph at lines 12--14
+Overfull \hbox (18.68417pt too wide) in paragraph at lines 14--16
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.AsyncCommand,
  []
 
 
-Overfull \hbox (21.18607pt too wide) in paragraph at lines 14--16
+Overfull \hbox (21.18607pt too wide) in paragraph at lines 16--18
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.IAsyncCommand,
  []
 
 
-Overfull \hbox (23.1839pt too wide) in paragraph at lines 17--19
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 19--21
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
  []
 
 
-Overfull \hbox (23.1839pt too wide) in paragraph at lines 20--22
-[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
- []
-
-
-Overfull \hbox (18.68417pt too wide) in paragraph at lines 23--25
-[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.AsyncCommand,
- []
-
-
-Overfull \hbox (21.18607pt too wide) in paragraph at lines 25--27
-[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.IAsyncCommand,
- []
-
-
-Overfull \hbox (67.21106pt too wide) in paragraph at lines 33--35
+Overfull \hbox (67.21106pt too wide) in paragraph at lines 21--23
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.SingletonCommandManager,
  []
 
 
-Overfull \hbox (23.1839pt too wide) in paragraph at lines 36--38
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 24--26
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
  []
 
 
-Overfull \hbox (23.1839pt too wide) in paragraph at lines 39--41
-[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
- []
-
-
-Overfull \hbox (18.68417pt too wide) in paragraph at lines 45--47
+Overfull \hbox (18.68417pt too wide) in paragraph at lines 27--29
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.AsyncCommand,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Overfull \hbox (21.18607pt too wide) in paragraph at lines 29--31
+[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.IAsyncCommand,
+ []
+
+
+Overfull \hbox (67.21106pt too wide) in paragraph at lines 37--39
+[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.SingletonCommandManager,
+ []
+
+
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 40--42
+[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
+ []
+
+
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 43--45
+[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
+ []
+
+
+Overfull \hbox (18.68417pt too wide) in paragraph at lines 49--51
+[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.AsyncCommand,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.Command,
  []
 
 
-Overfull \hbox (37.18774pt too wide) in paragraph at lines 48--50
+Overfull \hbox (37.18774pt too wide) in paragraph at lines 52--54
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CompositeCommand,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.ICommand,
  []
 
 
-Overfull \hbox (18.68417pt too wide) in paragraph at lines 54--56
+Overfull \hbox (18.68417pt too wide) in paragraph at lines 58--60
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.AsyncCommand,
  []
 
 
-Overfull \hbox (21.18607pt too wide) in paragraph at lines 56--58
+Overfull \hbox (21.18607pt too wide) in paragraph at lines 60--62
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.IAsyncCommand,
  []
 
 
-Overfull \hbox (23.1839pt too wide) in paragraph at lines 61--63
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 65--67
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
  []
 
 
-Overfull \hbox (23.1839pt too wide) in paragraph at lines 69--71
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 73--75
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
  []
 
 
-Overfull \hbox (67.21106pt too wide) in paragraph at lines 71--73
+Overfull \hbox (67.21106pt too wide) in paragraph at lines 75--77
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.SingletonCommandManager,
  []
 
 
-Overfull \hbox (23.1839pt too wide) in paragraph at lines 77--79
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 78--80
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
  []
 
 
-Overfull \hbox (67.21106pt too wide) in paragraph at lines 79--81
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 84--86
+[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
+ []
+
+
+Overfull \hbox (67.21106pt too wide) in paragraph at lines 86--88
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.SingletonCommandManager,
  []
 
 
-Overfull \hbox (23.1839pt too wide) in paragraph at lines 82--84
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 89--91
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
  []
 
 
-Overfull \hbox (23.1839pt too wide) in paragraph at lines 85--87
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 92--94
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
  []
 
 
-Overfull \hbox (23.1839pt too wide) in paragraph at lines 88--90
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 95--97
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
  []
 
 
-Overfull \hbox (67.21106pt too wide) in paragraph at lines 90--92
+Overfull \hbox (67.21106pt too wide) in paragraph at lines 97--99
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.SingletonCommandManager,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 100--102
+[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.IUndoable,
  []
 
 
-Overfull \hbox (52.68549pt too wide) in paragraph at lines 96--98
+Overfull \hbox (52.68549pt too wide) in paragraph at lines 106--108
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.NullCompositeCommand,
  []
 
 
-Overfull \hbox (52.68549pt too wide) in paragraph at lines 102--104
+Overfull \hbox (52.68549pt too wide) in paragraph at lines 112--114
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.NullCompositeCommand,
  []
 
-
-Overfull \hbox (23.1839pt too wide) in paragraph at lines 108--110
-[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
- []
-
-
-Overfull \hbox (67.21106pt too wide) in paragraph at lines 110--112
-[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.SingletonCommandManager,
- []
-
-
-Overfull \hbox (23.1839pt too wide) in paragraph at lines 113--115
-[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
- []
-
-[35
+[37
 
 
 
 ]
-Overfull \hbox (67.21106pt too wide) in paragraph at lines 115--117
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 118--120
+[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
+ []
+
+
+Overfull \hbox (67.21106pt too wide) in paragraph at lines 120--122
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.SingletonCommandManager,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 123--125
+[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
+ []
+
+
+Overfull \hbox (67.21106pt too wide) in paragraph at lines 125--127
+[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.SingletonCommandManager,
+ []
+
+
+Overfull \hbox (36.21329pt too wide) in paragraph at lines 141--143
+[]\T1/phv/m/n/10 SadSapphicGames.CommandPattern.AlreadyRunningException,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 []\T1/phv/m/n/10 SadSapphicGames.CommandPattern.AsyncCommand,
  []
 
 
-Overfull \hbox (17.18774pt too wide) in paragraph at lines 152--154
+Overfull \hbox (17.18774pt too wide) in paragraph at lines 170--172
 []\T1/phv/m/n/10 SadSapphicGames.CommandPattern.CompositeCommand,
  []
 
 
-Overfull \hbox (86.08144pt too wide) in paragraph at lines 164--166
+Overfull \hbox (86.08144pt too wide) in paragraph at lines 182--184
 []\T1/phv/m/n/10 SadSapphicGames.CommandPattern.IrreversibleCompositeFailureExc
 eption,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 []\T1/phv/m/n/10 SadSapphicGames.CommandPattern.NullCommand,
  []
 
 
-Overfull \hbox (32.68549pt too wide) in paragraph at lines 171--173
+Overfull \hbox (32.68549pt too wide) in paragraph at lines 189--191
 []\T1/phv/m/n/10 SadSapphicGames.CommandPattern.NullCompositeCommand,
  []
 
 
-Overfull \hbox (84.0836pt too wide) in paragraph at lines 175--177
+Overfull \hbox (84.0836pt too wide) in paragraph at lines 193--195
 []\T1/phv/m/n/10 SadSapphicGames.CommandPattern.ReversibleCompositeFailureExcep
 tion,
  []
 
 
-Overfull \hbox (47.21106pt too wide) in paragraph at lines 180--182
+Overfull \hbox (47.21106pt too wide) in paragraph at lines 198--200
 []\T1/phv/m/n/10 SadSapphicGames.CommandPattern.SingletonCommandManager,
  []
 
 
-Overfull \hbox (23.1839pt too wide) in paragraph at lines 191--193
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 210--212
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.SimpleComposite,
  []
 
 
-Overfull \hbox (67.21106pt too wide) in paragraph at lines 199--201
+Overfull \hbox (67.21106pt too wide) in paragraph at lines 218--220
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.SingletonCommandManager,
  []
 
 
-Overfull \hbox (23.1839pt too wide) in paragraph at lines 202--204
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 221--223
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
  []
 
 
-Overfull \hbox (23.1839pt too wide) in paragraph at lines 205--207
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 224--226
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
  []
 
 
-Overfull \hbox (67.21106pt too wide) in paragraph at lines 207--209
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 227--229
+[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
+ []
+
+
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 230--232
+[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
+ []
+
+
+Overfull \hbox (67.21106pt too wide) in paragraph at lines 232--234
 []| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.SingletonCommandManager,
  []
 
-[36]) (./refman.aux)
+[38]
+Overfull \hbox (23.1839pt too wide) in paragraph at lines 235--237
+[]| \T1/phv/m/n/10 Sad-Sap-ph-icGames.CommandPattern.CommandStream,
+ []
+
+[39
+
+]) (./refman.aux)
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 5B83B5DD8D6F02C10D7B2CA7511730F5;23657.
+(rerunfilecheck)             Checksum: 82FD62CDEEE5AB9010069E72693BD3FD;25958.
  ) 
 Here is how much of TeX's memory you used:
- 18416 strings out of 478305
- 317873 string characters out of 5849247
- 631119 words of memory out of 5000000
- 35924 multiletter control sequences out of 15000+600000
+ 18501 strings out of 478305
+ 322818 string characters out of 5849247
+ 635014 words of memory out of 5000000
+ 35968 multiletter control sequences out of 15000+600000
  530941 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,117p,915b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,16n,117p,932b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/
@@ -1565,10 +1635,10 @@ dist/fonts/type1/urw/courier/ucrro8a.pfb><c:/texlive/2022/texmf-dist/fonts/type
 1/urw/helvetic/uhvb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/
 uhvb8ac.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:
 /texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (42 pages, 256539 bytes).
+Output written on refman.pdf (45 pages, 272511 bytes).
 PDF statistics:
- 1546 PDF objects out of 1728 (max. 8388607)
- 1396 compressed objects within 14 object streams
- 294 named destinations out of 1000 (max. 500000)
- 853 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1743 PDF objects out of 2073 (max. 8388607)
+ 1576 compressed objects within 16 object streams
+ 333 named destinations out of 1000 (max. 500000)
+ 930 words of extra memory for PDF output out of 10000 (max. 10000000)
 

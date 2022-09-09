@@ -30,10 +30,7 @@ abstract Task \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_a
 \item 
 Task \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_abffdeda7d6b80f3d4cfb2aee7eb627c9}{Command\+Task}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \begin{DoxyCompactList}\small\item\em The task for the completion of the Execute\+Async method after it reaches its first await and returns control back to the calling method (\mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream_a820f8a982580afcb40ac7f053e6bca29}{Command\+Stream.\+Try\+Execute\+Next()}}) \end{DoxyCompactList}\item 
-Cancellation\+Token\+Source \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a1eebc70d2124b7a46b567aa42be25f57}{Cancellation\+Token\+Source}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\begin{DoxyCompactList}\small\item\em This can be used to signal to Command\+Task that it should be canceled, null until the execute method is invoked \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a9a33c5f6937809d124552c0f2071ff08}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a9a33c5f6937809d124552c0f2071ff08}} 
-Cancellation\+Token {\bfseries Cancellation\+Token}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+Cancellation\+Token \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a9a33c5f6937809d124552c0f2071ff08}{Cancellation\+Token}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \begin{DoxyCompactList}\small\item\em This can be used in Execute\+Async to determine if the Command\+Task has been canceled. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Events}
 \begin{DoxyCompactItemize}
@@ -92,19 +89,19 @@ Implements \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_
 
 
 \doxysubsection{Property Documentation}
-\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a1eebc70d2124b7a46b567aa42be25f57}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a1eebc70d2124b7a46b567aa42be25f57}} 
-\index{SadSapphicGames.CommandPattern.AsyncCommand@{SadSapphicGames.CommandPattern.AsyncCommand}!CancellationTokenSource@{CancellationTokenSource}}
-\index{CancellationTokenSource@{CancellationTokenSource}!SadSapphicGames.CommandPattern.AsyncCommand@{SadSapphicGames.CommandPattern.AsyncCommand}}
-\doxysubsubsection{\texorpdfstring{CancellationTokenSource}{CancellationTokenSource}}
-{\footnotesize\ttfamily Cancellation\+Token\+Source Sad\+Sapphic\+Games.\+Command\+Pattern.\+Async\+Command.\+Cancellation\+Token\+Source\hspace{0.3cm}{\ttfamily [get]}}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a9a33c5f6937809d124552c0f2071ff08}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a9a33c5f6937809d124552c0f2071ff08}} 
+\index{SadSapphicGames.CommandPattern.AsyncCommand@{SadSapphicGames.CommandPattern.AsyncCommand}!CancellationToken@{CancellationToken}}
+\index{CancellationToken@{CancellationToken}!SadSapphicGames.CommandPattern.AsyncCommand@{SadSapphicGames.CommandPattern.AsyncCommand}}
+\doxysubsubsection{\texorpdfstring{CancellationToken}{CancellationToken}}
+{\footnotesize\ttfamily Cancellation\+Token Sad\+Sapphic\+Games.\+Command\+Pattern.\+Async\+Command.\+Cancellation\+Token\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
 
 
 
-This can be used to signal to Command\+Task that it should be canceled, null until the execute method is invoked 
+This can be used in Execute\+Async to determine if the Command\+Task has been canceled. 
 
 
 
-Implements \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_a3fefa0d47a88325e7b22753396c54a73}{Sad\+Sapphic\+Games.\+Command\+Pattern.\+IAsync\+Command}}.
+Implements \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_a2275c240e2ad2472f4d5ad1dc80c690d}{Sad\+Sapphic\+Games.\+Command\+Pattern.\+IAsync\+Command}}.
 
 \mbox{\Hypertarget{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_abffdeda7d6b80f3d4cfb2aee7eb627c9}\label{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_abffdeda7d6b80f3d4cfb2aee7eb627c9}} 
 \index{SadSapphicGames.CommandPattern.AsyncCommand@{SadSapphicGames.CommandPattern.AsyncCommand}!CommandTask@{CommandTask}}

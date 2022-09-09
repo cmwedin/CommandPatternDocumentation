@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.4.0</span>
+   <div id="projectname">CommandPattern<span id="projectnumber">&#160;1.0.0</span>
    </div>
    <div id="projectbrief">This package contains a collection of classes and interfaces to allow for quick and consistent implementation of the command pattern across projects.</div>
   </td>
@@ -86,7 +86,7 @@ Inheritance diagram for SadSapphicGames.CommandPattern.AsyncCommand:</div>
   <img src="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.png" usemap="#SadSapphicGames.CommandPattern.AsyncCommand_map" alt=""/>
   <map id="SadSapphicGames.CommandPattern.AsyncCommand_map" name="SadSapphicGames.CommandPattern.AsyncCommand_map">
 <area href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html" title="The base class of all commands" alt="SadSapphicGames.CommandPattern.Command" shape="rect" coords="0,56,315,80"/>
-<area href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html" title="This Interface of the AsyncCommand abstract class, It is strongly recommended you use that class rath..." alt="SadSapphicGames.CommandPattern.IAsyncCommand" shape="rect" coords="325,56,640,80"/>
+<area href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html" title="This Interface of the AsyncCommand abstract class, It is strongly recommended you use the AsyncComman..." alt="SadSapphicGames.CommandPattern.IAsyncCommand" shape="rect" coords="325,56,640,80"/>
 <area href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html" title="This is the Interface of the Command abstract class, unless you are defining your own base type for c..." alt="SadSapphicGames.CommandPattern.ICommand" shape="rect" coords="0,0,315,24"/>
 <area href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html" title="This is the Interface of the Command abstract class, unless you are defining your own base type for c..." alt="SadSapphicGames.CommandPattern.ICommand" shape="rect" coords="325,0,640,24"/>
   </map>
@@ -102,7 +102,7 @@ Public Member Functions</h2></td></tr>
  IMPORTANT: if you want to be able to cancel the <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html" title="The base class of all commands who&#39;s execute method involves asynchronous tasks">AsyncCommand</a>'s task you must invoke CancellationToken.ThrowIfCancellationRequested() within this method somewhere after the first await. If you do not do so attempting to cancel it will do nothing.  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#a98bac975d12c5b43febbb767d254b610">More...</a><br /></td></tr>
 <tr class="separator:a98bac975d12c5b43febbb767d254b610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6189e8f9e3fc973c2dd66df8f3ec39c"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html#ae6189e8f9e3fc973c2dd66df8f3ec39c">Execute</a> ()</td></tr>
-<tr class="memdesc:ae6189e8f9e3fc973c2dd66df8f3ec39c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the command  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html#ae6189e8f9e3fc973c2dd66df8f3ec39c">More...</a><br /></td></tr>
+<tr class="memdesc:ae6189e8f9e3fc973c2dd66df8f3ec39c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the command, do not invoke directly, instead use a <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html" title="This is the object that stores commands to be invoked and executes them when told to by the client....">CommandStream</a>.  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_command.html#ae6189e8f9e3fc973c2dd66df8f3ec39c">More...</a><br /></td></tr>
 <tr class="separator:ae6189e8f9e3fc973c2dd66df8f3ec39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a603b842cffa30e77a785300bdc1cc369"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html#a603b842cffa30e77a785300bdc1cc369">Execute</a> ()</td></tr>
 <tr class="memdesc:a603b842cffa30e77a785300bdc1cc369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the function of the command  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_command.html#a603b842cffa30e77a785300bdc1cc369">More...</a><br /></td></tr>
@@ -123,20 +123,16 @@ Properties</h2></td></tr>
 <tr class="memitem:abffdeda7d6b80f3d4cfb2aee7eb627c9"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#abffdeda7d6b80f3d4cfb2aee7eb627c9">CommandTask</a><code> [get]</code></td></tr>
 <tr class="memdesc:abffdeda7d6b80f3d4cfb2aee7eb627c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The task for the completion of the ExecuteAsync method after it reaches its first await and returns control back to the calling method (<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a820f8a982580afcb40ac7f053e6bca29" title="Attempts to execute the next command in the queue, returns false if it is empty or the command is IFa...">CommandStream.TryExecuteNext()</a>)  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#abffdeda7d6b80f3d4cfb2aee7eb627c9">More...</a><br /></td></tr>
 <tr class="separator:abffdeda7d6b80f3d4cfb2aee7eb627c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eebc70d2124b7a46b567aa42be25f57"><td class="memItemLeft" align="right" valign="top">CancellationTokenSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#a1eebc70d2124b7a46b567aa42be25f57">CancellationTokenSource</a><code> [get]</code></td></tr>
-<tr class="memdesc:a1eebc70d2124b7a46b567aa42be25f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">This can be used to signal to CommandTask that it should be canceled, null until the execute method is invoked  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#a1eebc70d2124b7a46b567aa42be25f57">More...</a><br /></td></tr>
-<tr class="separator:a1eebc70d2124b7a46b567aa42be25f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a33c5f6937809d124552c0f2071ff08"><td class="memItemLeft" align="right" valign="top"><a id="a9a33c5f6937809d124552c0f2071ff08" name="a9a33c5f6937809d124552c0f2071ff08"></a>
-CancellationToken&#160;</td><td class="memItemRight" valign="bottom"><b>CancellationToken</b><code> [get]</code></td></tr>
-<tr class="memdesc:a9a33c5f6937809d124552c0f2071ff08"><td class="mdescLeft">&#160;</td><td class="mdescRight">This can be used in ExecuteAsync to determine if the CommandTask has been canceled. <br /></td></tr>
+<tr class="memitem:a9a33c5f6937809d124552c0f2071ff08"><td class="memItemLeft" align="right" valign="top">CancellationToken&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#a9a33c5f6937809d124552c0f2071ff08">CancellationToken</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a9a33c5f6937809d124552c0f2071ff08"><td class="mdescLeft">&#160;</td><td class="mdescRight">This can be used in ExecuteAsync to determine if the CommandTask has been canceled.  <a href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#a9a33c5f6937809d124552c0f2071ff08">More...</a><br /></td></tr>
 <tr class="separator:a9a33c5f6937809d124552c0f2071ff08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html">SadSapphicGames.CommandPattern.IAsyncCommand</a></td></tr>
 <tr class="memitem:abbc8ae3e847b06cf970c7996a135f3e2 inherit properties_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#abbc8ae3e847b06cf970c7996a135f3e2">CommandTask</a><code> [get]</code></td></tr>
 <tr class="memdesc:abbc8ae3e847b06cf970c7996a135f3e2 inherit properties_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should get the asynchronous task returned by ExecuteAsync after it reaches its first await  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#abbc8ae3e847b06cf970c7996a135f3e2">More...</a><br /></td></tr>
 <tr class="separator:abbc8ae3e847b06cf970c7996a135f3e2 inherit properties_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fefa0d47a88325e7b22753396c54a73 inherit properties_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command"><td class="memItemLeft" align="right" valign="top">CancellationTokenSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#a3fefa0d47a88325e7b22753396c54a73">CancellationTokenSource</a><code> [get]</code></td></tr>
-<tr class="memdesc:a3fefa0d47a88325e7b22753396c54a73 inherit properties_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">This can be used to Cancel the task after it has been started.  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#a3fefa0d47a88325e7b22753396c54a73">More...</a><br /></td></tr>
-<tr class="separator:a3fefa0d47a88325e7b22753396c54a73 inherit properties_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2275c240e2ad2472f4d5ad1dc80c690d inherit properties_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command"><td class="memItemLeft" align="right" valign="top">CancellationToken&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#a2275c240e2ad2472f4d5ad1dc80c690d">CancellationToken</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a2275c240e2ad2472f4d5ad1dc80c690d inherit properties_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">This can be used to Cancel the task after it has been started.  <a href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#a2275c240e2ad2472f4d5ad1dc80c690d">More...</a><br /></td></tr>
+<tr class="separator:a2275c240e2ad2472f4d5ad1dc80c690d inherit properties_interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="events" name="events"></a>
 Events</h2></td></tr>
@@ -239,8 +235,8 @@ Action&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnyTaskEnd</b></t
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
-<a id="a1eebc70d2124b7a46b567aa42be25f57" name="a1eebc70d2124b7a46b567aa42be25f57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1eebc70d2124b7a46b567aa42be25f57">&#9670;&nbsp;</a></span>CancellationTokenSource</h2>
+<a id="a9a33c5f6937809d124552c0f2071ff08" name="a9a33c5f6937809d124552c0f2071ff08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a33c5f6937809d124552c0f2071ff08">&#9670;&nbsp;</a></span>CancellationToken</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,19 +245,19 @@ Action&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnyTaskEnd</b></t
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">CancellationTokenSource SadSapphicGames.CommandPattern.AsyncCommand.CancellationTokenSource</td>
+          <td class="memname">CancellationToken SadSapphicGames.CommandPattern.AsyncCommand.CancellationToken</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>This can be used to signal to CommandTask that it should be canceled, null until the execute method is invoked </p>
+<p>This can be used in ExecuteAsync to determine if the CommandTask has been canceled. </p>
 
-<p>Implements <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#a3fefa0d47a88325e7b22753396c54a73">SadSapphicGames.CommandPattern.IAsyncCommand</a>.</p>
+<p>Implements <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#a2275c240e2ad2472f4d5ad1dc80c690d">SadSapphicGames.CommandPattern.IAsyncCommand</a>.</p>
 
 </div>
 </div>

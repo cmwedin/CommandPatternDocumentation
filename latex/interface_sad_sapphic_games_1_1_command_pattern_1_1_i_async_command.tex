@@ -2,7 +2,7 @@
 \label{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command}\index{SadSapphicGames.CommandPattern.IAsyncCommand@{SadSapphicGames.CommandPattern.IAsyncCommand}}
 
 
-This Interface of the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} abstract class, It is strongly recommended you use that class rather than implement this yourself unless you are very familiar with asynchronous programming ~\newline
+This Interface of the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} abstract class, It is strongly recommended you use the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} class rather than implement this yourself unless you are very familiar with asynchronous programming ~\newline
   
 
 
@@ -22,7 +22,7 @@ abstract Task \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1
 \item 
 Task \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_abbc8ae3e847b06cf970c7996a135f3e2}{Command\+Task}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \begin{DoxyCompactList}\small\item\em This should get the asynchronous task returned by Execute\+Async after it reaches its first await \end{DoxyCompactList}\item 
-Cancellation\+Token\+Source \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_a3fefa0d47a88325e7b22753396c54a73}{Cancellation\+Token\+Source}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+Cancellation\+Token \mbox{\hyperlink{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_a2275c240e2ad2472f4d5ad1dc80c690d}{Cancellation\+Token}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \begin{DoxyCompactList}\small\item\em This can be used to Cancel the task after it has been started. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Events}
 \begin{DoxyCompactItemize}
@@ -42,7 +42,7 @@ Action {\bfseries On\+Any\+Task\+End}
 
 
 \doxysubsection{Detailed Description}
-This Interface of the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} abstract class, It is strongly recommended you use that class rather than implement this yourself unless you are very familiar with asynchronous programming ~\newline
+This Interface of the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} abstract class, It is strongly recommended you use the \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command}{Async\+Command}} class rather than implement this yourself unless you are very familiar with asynchronous programming ~\newline
  
 
 \doxysubsection{Member Function Documentation}
@@ -66,11 +66,11 @@ Implemented in \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_
 
 
 \doxysubsection{Property Documentation}
-\mbox{\Hypertarget{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_a3fefa0d47a88325e7b22753396c54a73}\label{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_a3fefa0d47a88325e7b22753396c54a73}} 
-\index{SadSapphicGames.CommandPattern.IAsyncCommand@{SadSapphicGames.CommandPattern.IAsyncCommand}!CancellationTokenSource@{CancellationTokenSource}}
-\index{CancellationTokenSource@{CancellationTokenSource}!SadSapphicGames.CommandPattern.IAsyncCommand@{SadSapphicGames.CommandPattern.IAsyncCommand}}
-\doxysubsubsection{\texorpdfstring{CancellationTokenSource}{CancellationTokenSource}}
-{\footnotesize\ttfamily Cancellation\+Token\+Source Sad\+Sapphic\+Games.\+Command\+Pattern.\+IAsync\+Command.\+Cancellation\+Token\+Source\hspace{0.3cm}{\ttfamily [get]}}
+\mbox{\Hypertarget{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_a2275c240e2ad2472f4d5ad1dc80c690d}\label{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_a2275c240e2ad2472f4d5ad1dc80c690d}} 
+\index{SadSapphicGames.CommandPattern.IAsyncCommand@{SadSapphicGames.CommandPattern.IAsyncCommand}!CancellationToken@{CancellationToken}}
+\index{CancellationToken@{CancellationToken}!SadSapphicGames.CommandPattern.IAsyncCommand@{SadSapphicGames.CommandPattern.IAsyncCommand}}
+\doxysubsubsection{\texorpdfstring{CancellationToken}{CancellationToken}}
+{\footnotesize\ttfamily Cancellation\+Token Sad\+Sapphic\+Games.\+Command\+Pattern.\+IAsync\+Command.\+Cancellation\+Token\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
 
 
 
@@ -78,7 +78,7 @@ This can be used to Cancel the task after it has been started.
 
 
 
-Implemented in \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a1eebc70d2124b7a46b567aa42be25f57}{Sad\+Sapphic\+Games.\+Command\+Pattern.\+Async\+Command}}.
+Implemented in \mbox{\hyperlink{class_sad_sapphic_games_1_1_command_pattern_1_1_async_command_a9a33c5f6937809d124552c0f2071ff08}{Sad\+Sapphic\+Games.\+Command\+Pattern.\+Async\+Command}}.
 
 \mbox{\Hypertarget{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_abbc8ae3e847b06cf970c7996a135f3e2}\label{interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command_abbc8ae3e847b06cf970c7996a135f3e2}} 
 \index{SadSapphicGames.CommandPattern.IAsyncCommand@{SadSapphicGames.CommandPattern.IAsyncCommand}!CommandTask@{CommandTask}}

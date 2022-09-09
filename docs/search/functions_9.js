@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['togglecommandexecution_0',['ToggleCommandExecution',['../class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#a54be2ec772c271f01c73f2683ef8d304',1,'SadSapphicGames.CommandPattern.SingletonCommandManager.ToggleCommandExecution()'],['../class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#ad5246b881b5cda083c0894b9272019d9',1,'SadSapphicGames.CommandPattern.SingletonCommandManager.ToggleCommandExecution(bool onoff)']]],
-  ['tryexecutenext_1',['TryExecuteNext',['../class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a8a771235b465e619252c1046a78a57d4',1,'SadSapphicGames.CommandPattern.CommandStream.TryExecuteNext(out ICommand topCommand)'],['../class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a820f8a982580afcb40ac7f053e6bca29',1,'SadSapphicGames.CommandPattern.CommandStream.TryExecuteNext()']]],
-  ['tryqueueundocommand_2',['TryQueueUndoCommand',['../class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a02e41a3949caab5e379e48d1109cae1b',1,'SadSapphicGames.CommandPattern.CommandStream.TryQueueUndoCommand()'],['../class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#ace9998062a99f6e7df251eb84b267799',1,'SadSapphicGames.CommandPattern.SingletonCommandManager.TryQueueUndoCommand()']]]
+  ['simplecomposite_0',['SimpleComposite',['../class_sad_sapphic_games_1_1_command_pattern_1_1_simple_composite.html#aeaaac3585e0db078c11e656dc663ff0d',1,'SadSapphicGames::CommandPattern::SimpleComposite']]],
+  ['skipnextcommand_1',['SkipNextCommand',['../class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a5c3b6e06f6e6b3eabb5bf7a560ff2a59',1,'SadSapphicGames::CommandPattern::CommandStream']]]
 ];

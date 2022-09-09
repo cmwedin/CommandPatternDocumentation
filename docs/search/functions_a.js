@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['wouldfail_0',['WouldFail',['../interface_sad_sapphic_games_1_1_command_pattern_1_1_i_failable.html#af2f12fa4c6f0b5fca53d9ae2e77a4cd4',1,'SadSapphicGames::CommandPattern::IFailable']]]
+  ['togglecommandexecution_0',['ToggleCommandExecution',['../class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#a54be2ec772c271f01c73f2683ef8d304',1,'SadSapphicGames.CommandPattern.SingletonCommandManager.ToggleCommandExecution()'],['../class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#ad5246b881b5cda083c0894b9272019d9',1,'SadSapphicGames.CommandPattern.SingletonCommandManager.ToggleCommandExecution(bool onoff)']]],
+  ['tryexecuteimmediate_1',['TryExecuteImmediate',['../class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a99550599ccefc798b9a0935a1605f74c',1,'SadSapphicGames::CommandPattern::CommandStream']]],
+  ['tryexecutenext_2',['TryExecuteNext',['../class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a8a771235b465e619252c1046a78a57d4',1,'SadSapphicGames.CommandPattern.CommandStream.TryExecuteNext(out ICommand topCommand)'],['../class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a820f8a982580afcb40ac7f053e6bca29',1,'SadSapphicGames.CommandPattern.CommandStream.TryExecuteNext()']]],
+  ['trypeeknext_3',['TryPeekNext',['../class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a03e1414bdcedb8491374689427f182b4',1,'SadSapphicGames::CommandPattern::CommandStream']]],
+  ['tryqueueundocommand_4',['TryQueueUndoCommand',['../class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a53f0ba681e60b2c6c89cad78f80422b3',1,'SadSapphicGames.CommandPattern.CommandStream.TryQueueUndoCommand()'],['../class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#ace9998062a99f6e7df251eb84b267799',1,'SadSapphicGames.CommandPattern.SingletonCommandManager.TryQueueUndoCommand()']]],
+  ['tryundoimmediate_5',['TryUndoImmediate',['../class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a5482f92fba4c25f661f32bdd214b4623',1,'SadSapphicGames::CommandPattern::CommandStream']]]
 ];

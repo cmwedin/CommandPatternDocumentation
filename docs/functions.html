@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CommandPattern<span id="projectnumber">&#160;0.4.0</span>
+   <div id="projectname">CommandPattern<span id="projectnumber">&#160;1.0.0</span>
    </div>
    <div id="projectbrief">This package contains a collection of classes and interfaces to allow for quick and consistent implementation of the command pattern across projects.</div>
   </td>
@@ -72,9 +72,8 @@ $(function() {
 
 
 <h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
-<li>CancellationToken&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#a9a33c5f6937809d124552c0f2071ff08">SadSapphicGames.CommandPattern.AsyncCommand</a></li>
-<li>CancellationTokenSource&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#a1eebc70d2124b7a46b567aa42be25f57">SadSapphicGames.CommandPattern.AsyncCommand</a>, <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#a3fefa0d47a88325e7b22753396c54a73">SadSapphicGames.CommandPattern.IAsyncCommand</a></li>
-<li>CancelRunningCommandTask()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a4069a12cd45683984b8932a7fcf9df7c">SadSapphicGames.CommandPattern.CommandStream</a></li>
+<li>CancellationToken&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#a9a33c5f6937809d124552c0f2071ff08">SadSapphicGames.CommandPattern.AsyncCommand</a>, <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#a2275c240e2ad2472f4d5ad1dc80c690d">SadSapphicGames.CommandPattern.IAsyncCommand</a></li>
+<li>CancelRunningCommandTask()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a4069a12cd45683984b8932a7fcf9df7c">SadSapphicGames.CommandPattern.CommandStream</a>, <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#a8df055989ff7ac4274dc473b7a81d68b">SadSapphicGames.CommandPattern.SingletonCommandManager</a></li>
 <li>ChildCount&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html#a81ea69e2e48945fac91803fc4f6eb9f2">SadSapphicGames.CommandPattern.CompositeCommand</a></li>
 <li>CommandStream()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#ad9cda071a9e6c62206aaebf5b196d301">SadSapphicGames.CommandPattern.CommandStream</a></li>
 <li>CommandTask&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_async_command.html#abffdeda7d6b80f3d4cfb2aee7eb627c9">SadSapphicGames.CommandPattern.AsyncCommand</a>, <a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_async_command.html#abbc8ae3e847b06cf970c7996a135f3e2">SadSapphicGames.CommandPattern.IAsyncCommand</a></li>
@@ -97,7 +96,8 @@ $(function() {
 
 <h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
 <li>failedCommand&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_irreversible_composite_failure_exception.html#a778887c839717fa3f7a289da75261f22">SadSapphicGames.CommandPattern.IrreversibleCompositeFailureException</a>, <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_reversible_composite_failure_exception.html#a4cf17ff75b195fdbab4d745db16aab67">SadSapphicGames.CommandPattern.ReversibleCompositeFailureException</a></li>
-<li>ForceQueueUndoCommand()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#adc53e5a709a1a2f8e699e298725e65dd">SadSapphicGames.CommandPattern.CommandStream</a>, <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#a051b66fdc2ed7cb3870d6a00c2fb443f">SadSapphicGames.CommandPattern.SingletonCommandManager</a></li>
+<li>ForceQueueUndoCommand()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a3bdbd4789a76decc355848d8ca0ff177">SadSapphicGames.CommandPattern.CommandStream</a>, <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#a051b66fdc2ed7cb3870d6a00c2fb443f">SadSapphicGames.CommandPattern.SingletonCommandManager</a></li>
+<li>ForceTryUndoImmediate()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#ad158afb9f1257849a15d5fc7eb081f65">SadSapphicGames.CommandPattern.CommandStream</a></li>
 </ul>
 
 
@@ -106,6 +106,7 @@ $(function() {
 <li>GetCommandQueue()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a630222541f5492c2a33ba6107ef48b25">SadSapphicGames.CommandPattern.CommandStream</a></li>
 <li>GetFaultedCommandTasks()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a45184998448fd83464fff9a21ef05a98">SadSapphicGames.CommandPattern.CommandStream</a></li>
 <li>GetRunningCommandTasks()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#aead312da5b6d2708c386a389ed5cf60d">SadSapphicGames.CommandPattern.CommandStream</a>, <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#a2d26c5844d0386bd7b5caec0ca5621b1">SadSapphicGames.CommandPattern.SingletonCommandManager</a></li>
+<li>GetRunningTaskCTS()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#ae920e128f3ad7dee959e5178000717c2">SadSapphicGames.CommandPattern.CommandStream</a></li>
 <li>GetUndoCommand()&#160;:&#160;<a class="el" href="interface_sad_sapphic_games_1_1_command_pattern_1_1_i_undoable.html#aee034fd01b2437ef40238694456744d9">SadSapphicGames.CommandPattern.IUndoable</a>, <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_null_command.html#a01f9dab303a70bb0cc001ea0599c300e">SadSapphicGames.CommandPattern.NullCommand</a>, <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_null_composite_command.html#acf22c0fbe9e16f98929b65ea732a7a1c">SadSapphicGames.CommandPattern.NullCompositeCommand</a></li>
 </ul>
 
@@ -149,16 +150,25 @@ $(function() {
 </ul>
 
 
+<h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
+<li>RequeueNextCommand()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a5ef2c579d0aba6c8e00e5bd666d0d3f9">SadSapphicGames.CommandPattern.CommandStream</a></li>
+</ul>
+
+
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
 <li>SimpleComposite()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_simple_composite.html#aeaaac3585e0db078c11e656dc663ff0d">SadSapphicGames.CommandPattern.SimpleComposite</a></li>
+<li>SkipNextCommand()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a5c3b6e06f6e6b3eabb5bf7a560ff2a59">SadSapphicGames.CommandPattern.CommandStream</a></li>
 <li>subCommands&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_composite_command.html#a1a2c20de5efb9880a8236c723ab5b87c">SadSapphicGames.CommandPattern.CompositeCommand</a></li>
 </ul>
 
 
 <h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
 <li>ToggleCommandExecution()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#a54be2ec772c271f01c73f2683ef8d304">SadSapphicGames.CommandPattern.SingletonCommandManager</a></li>
+<li>TryExecuteImmediate()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a99550599ccefc798b9a0935a1605f74c">SadSapphicGames.CommandPattern.CommandStream</a></li>
 <li>TryExecuteNext()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a8a771235b465e619252c1046a78a57d4">SadSapphicGames.CommandPattern.CommandStream</a></li>
-<li>TryQueueUndoCommand()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a02e41a3949caab5e379e48d1109cae1b">SadSapphicGames.CommandPattern.CommandStream</a>, <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#ace9998062a99f6e7df251eb84b267799">SadSapphicGames.CommandPattern.SingletonCommandManager</a></li>
+<li>TryPeekNext()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a03e1414bdcedb8491374689427f182b4">SadSapphicGames.CommandPattern.CommandStream</a></li>
+<li>TryQueueUndoCommand()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a53f0ba681e60b2c6c89cad78f80422b3">SadSapphicGames.CommandPattern.CommandStream</a>, <a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_singleton_command_manager.html#ace9998062a99f6e7df251eb84b267799">SadSapphicGames.CommandPattern.SingletonCommandManager</a></li>
+<li>TryUndoImmediate()&#160;:&#160;<a class="el" href="class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a5482f92fba4c25f661f32bdd214b4623">SadSapphicGames.CommandPattern.CommandStream</a></li>
 </ul>
 
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['simplecomposite_0',['SimpleComposite',['../class_sad_sapphic_games_1_1_command_pattern_1_1_simple_composite.html#aeaaac3585e0db078c11e656dc663ff0d',1,'SadSapphicGames::CommandPattern::SimpleComposite']]]
+  ['requeuenextcommand_0',['RequeueNextCommand',['../class_sad_sapphic_games_1_1_command_pattern_1_1_command_stream.html#a5ef2c579d0aba6c8e00e5bd666d0d3f9',1,'SadSapphicGames::CommandPattern::CommandStream']]]
 ];
